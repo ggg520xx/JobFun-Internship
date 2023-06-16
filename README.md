@@ -28,7 +28,7 @@
 
 <img src="https://i.imgur.com/8W3S2ZX.png">
 
-![](https://i.imgur.com/C8DJuXu.png)
+![](https://i.imgur.com/eajWynK.png)
 
 ---
 
@@ -36,41 +36,38 @@
 
 <br>
 
-### React：
+### 前端：
 
-- Router 實現頁面路由及各種 use 方法 及 Hook form
-- 功能元件抓取對應資料，藉由對應的 props 傳遞至頁面或切換元件路由時一同傳遞
-- useState , useEffect , useContext , useParms ..等
-- 在所需頁面引入需要的函式方法及管理全域的 useContext 免去多層反覆傳遞，達成即時改變頁面內容
+- Html
+- Javascript
+- JQuery
 
 <br>
 
 ### 頁面外觀：
 
-- Tailwind Css
-- Style-Component
 - Css
+- Bootstrap
+
+<br>
+
+### 後端：
+
+- Node.Js
+- MySQL
+- Restful Api
 
 <br>
 
 ### 動畫套件：
 
-- Swiper
 - Sweet Alert
-- React Credit-Card
-- tsParticles 漂浮點狀特效
 
 <br>
 
 ### 其他：
 
-- Axios、原生 Fetch
-- ESLint Prettier
-- Restful Api
-- date-fns
-- React-date-range
-- Json-Server、Json-Server-auth 模擬後端抓取資料庫
-- Live2D
+- Apache Xampp / Mamp
 
 <br>
 
@@ -80,9 +77,7 @@
 
 ### 程式：
 
-- Cra 基於 Web pack 越多套件越笨重 , 試著改用 Vite
-- 開發上非同步取值的寫法
-- 頁面層 及 功能層(資料取得) 需劃分更好
+- 前端改用框架作開發
 
 ---
 
@@ -92,5 +87,7 @@
 - 功能圖
 - 使用者故事
 - Website Wireframe ( Figma )
+- 資料庫關聯表
 
-<img src="https://i.imgur.com/J04Acgo.png">
+<img src="https://i.imgur.com/2ziOp1E.png">
+<img src="https://i.imgur.com/9aMTb11.png">
