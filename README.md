@@ -4,7 +4,7 @@
   </a>
 </p>
 
-<h1 align="center" style="font-weight: 700">Hola Camp</h1>
+<h1 align="center" style="font-weight: 700">JobFun 實習趣</h1>
 
 一個提供搜尋實習職缺之平台，可以在此使用選取地區及產業相關執行搜尋，公司可以放上缺額提供給實習應徵。
 
