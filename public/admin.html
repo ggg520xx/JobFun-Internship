@@ -1,0 +1,677 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>實習趣管理員後台</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/Admin_assets/css/main.css" />
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/Admin_css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/Admin_css/line-icons.css">
+	<link rel="stylesheet" href="css/Admin_css/main.css">
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<div id="header">
+
+		<div class="top">
+			<div id="logo" style="text-align:center;">
+				<span class="" style="clip-path: circle(50% at 50% 50%);"><img src="img/Admin_images/avatar1.png" alt=""></span>
+				<h1 id="title" style="text-align:center;">Admin</h1>
+				<p>@實習趣管理員</p>
+			</div>
+			<br>
+			<!-- Nav 左邊側邊欄位的主選單-->
+			<nav id="nav" style="text-align:center;">
+				<ul>
+					<!-- <li><a href="#top" id="top-link"><span class="icon solid fa-home">主頁</span></a></li> -->
+					<li><a href="#internsList" id="internsListC"><span class="icon solid fa-user">實習生清單</span></a>
+					</li>
+					<li><a href="#internsApproved" id="internsApprovedC"><span class="icon solid fa-user">實習生註冊成功</span></a></li>
+					<li><a href="#internsReview" id="internsReviewC"><span class="icon solid fa-user">實習生審查</span></a></li>
+					<li><a href="#internsReject" id="internsRejectC"><span class="icon solid fa-user">未通過註冊的實習生</span></a>
+					</li>
+					<br>
+					<li><a href="#companyList" id="companyListC"><span class="icon solid fa-th">公司清單</span></a></li>
+					<li><a href="#companyApproved" id="companyApprovedC"><span class="icon solid fa-th">公司註冊成功</span></a></li>
+					<li><a href="#companyReview" id="companyReviewC"><span class="icon solid fa-th">待審查的實習機會</span></a>
+					</li>
+					<li><a href="#companyReject" id="companyRejectC"><span class="icon solid fa-th">未通過審查的廠商</span></a>
+					</li>
+					<a href="admimsignin.html"><button>登出</button>　</a>
+
+				</ul>
+			</nav>
+			<!-- Nav 左邊側邊欄位的主選單 結束-->
+		</div>
+
+
+
+		<div class="bottom">
+
+			<!-- Social Icons -->
+			<!-- <ul class="icons">
+				<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+				<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+				<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+			</ul> -->
+
+		</div>
+
+	</div>
+
+	
+	<!-- Main 右側區清單區塊-->
+	<div id="main">
+		<br>
+		<br>
+		<!-- 實習生：清單 註冊成功 審查 未通過註冊的實習 -->
+		<div id="internsList" class="clear" style="text-align: center;">
+			<!-- <div class="col-12"> -->
+			<div class="services-item fadeInDown" data-wow-delay="0.6s" style="color: black;">
+
+				<!-- 上方頁籤主選單 -->
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+					<li class="nav-item" role="presentation">
+						<a class="nav-link active" id="internsListB" data-toggle="tab" href="#internsList" role="tab"
+							aria-controls="home" aria-selected="true">實習生清單</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" id="internsApprovedB" data-toggle="tab" href="#internsApproved"
+							role="tab" aria-controls="profile" aria-selected="false">實習生註冊成功</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" id="internsReviewB" data-toggle="tab" href="#internsReview" role="tab"
+							aria-controls="profile" aria-selected="false">實習生待審查</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" id="internsRejectB" data-toggle="tab" href="#internsReject" role="tab"
+							aria-controls="contact" aria-selected="false">未通過註冊的實習生</a>
+					</li>
+				</ul>
+			</div>
+			<div class="tab-content" id="myTabContent">
+
+				<!-- 角落實習生1-6號 總清單 註冊成功 尚未審查 未通過審查-->
+				<div class="tab-pane fade show active" id="internsList" role="tabpanel" aria-labelledby="home-tab">
+					<br><br>
+					<div>
+						<br>
+						<div id="tab-4">
+							<div class="col-12">
+								<div class="row searchResultCard" style="background-color:aliceblue;">
+									<div class="col-2">
+										<div>實習生姓名</div>
+									</div>
+									<div class="col-2">Email</div>
+									<div class="col-2">電話</div>
+									<div class="col-2">註冊日期</div>
+									<div class="col-2">狀態</div>
+									<div class="col-2">管理</div>
+								</div>
+								<div class="row searchResultCard">
+									<div class="col-2">
+										<div>角落實習生1號</div>
+									</div>
+									<div class="col-2">123@gmail.com</div>
+									<div class="col-2">0912345678</div>
+									<div class="col-2">2020-11-16</div>
+									<div class="col-2">註冊成功</div>
+
+									<div class="col-2"><U>編輯</U> <U>查看詳情</U></div>
+								</div>
+								<div class="row searchResultCard">
+									<div class="col-2">
+										<div>角落實習生2號</div>
+									</div>
+									<div class="col-2">123@gmail.com</div>
+									<div class="col-2">0912345678</div>
+									<div class="col-2">2020-11-16</div>
+									<div class="col-2">註冊成功</div>
+
+									<div class="col-2"><U>編輯</U> <U>查看詳情</U></div>
+								</div>
+								<div class="row searchResultCard">
+									<div class="col-2">
+										<div>角落實習生3號</div>
+									</div>
+									<div class="col-2">123@gmail.com</div>
+									<div class="col-2">0912345678</div>
+									<div class="col-2">2020-11-16</div>
+									<div class="col-2">尚未審查</div>
+
+									<div class="col-2"><U>編輯</U> <U>查看詳情</U></div>
+								</div>
+								<div class="row searchResultCard">
+									<div class="col-2">
+										<div>角落實習生4號</div>
+									</div>
+									<div class="col-2">123@gmail.com</div>
+									<div class="col-2">0912345678</div>
+									<div class="col-2">2020-11-16</div>
+									<div class="col-2">尚未審查</div>
+
+									<div class="col-2"><U>編輯</U> <U>查看詳情</U></div>
+								</div>
+								<div class="row searchResultCard">
+									<div class="col-2">
+										<div>角落實習生5號</div>
+									</div>
+									<div class="col-2">123@gmail.com</div>
+									<div class="col-2">0912345678</div>
+									<div class="col-2">2020-11-16</div>
+									<div class="col-2">未通過審查</div>
+
+									<div class="col-2"><U>編輯</U> <U>查看詳情</U></div>
+								</div>
+								<div class="row searchResultCard">
+									<div class="col-2">
+										<div>角落實習生6號</div>
+									</div>
+									<div class="col-2">123@gmail.com</div>
+									<div class="col-2">0912345678</div>
+									<div class="col-2">2020-11-16</div>
+									<div class="col-2">未通過審查</div>
+
+									<div class="col-2"><U>編輯</U> <U>查看詳情</U></div>
+								</div>
+							</div>
+						</div>
+						<br><br>
+					</div>
+				</div>
+
+				<!-- 角落實習生1,2號 註冊成功 -->
+				<div class="tab-pane fade" id="internsApproved" role="tabpanel" aria-labelledby="profile-tab">
+					<br><br>
+					<div>
+						<br>
+						<div id="tab-4">
+							<div class="col-12">
+								<div class="row searchResultCard" style="background-color:aliceblue;">
+									<div class="col-2">
+										<div>實習生姓名</div>
+									</div>
+									<div class="col-2">Email</div>
+									<div class="col-2">電話</div>
+									<div class="col-2">註冊日期</div>
+									<div class="col-2">狀態</div>
+									<div class="col-2">管理</div>
+								</div>
+								<div class="row searchResultCard">
+									<div class="col-2">
+										<div>角落實習生1號</div>
+									</div>
+									<div class="col-2">123@gmail.com</div>
+									<div class="col-2">0912345678</div>
+									<div class="col-2">2020-11-16</div>
+									<div class="col-2">註冊成功</div>
+
+									<div class="col-2"><U>編輯</U> <U>查看詳情</U></div>
+								</div>
+								<div class="row searchResultCard">
+									<div class="col-2">
+										<div>角落實習生2號</div>
+									</div>
+									<div class="col-2">123@gmail.com</div>
+									<div class="col-2">0912345678</div>
+									<div class="col-2">2020-11-16</div>
+									<div class="col-2">註冊成功</div>
+
+									<div class="col-2"><U>編輯</U> <U>查看詳情</U></div>
+								</div>
+							</div>
+						</div>
+						<br><br>
+					</div>
+					<br>
+
+				</div>
+				<!-- 角落實習生1,2號 註冊成功 結束-->
+
+				<!-- 角落實習生3,4號 尚未審查 -->
+				<div class="tab-pane fade" id="internsReview" role="tabpanel" aria-labelledby="profile-tab">
+					<br><br>
+					<div>
+						<br>
+						<div id="tab-4">
+							<div class="col-12">
+								<div class="row searchResultCard" style="background-color:aliceblue;">
+									<div class="col-2">
+										<div>實習生姓名</div>
+									</div>
+									<div class="col-2">Email</div>
+									<div class="col-2">電話</div>
+									<div class="col-2">註冊日期</div>
+									<div class="col-2">狀態</div>
+									<div class="col-2">管理</div>
+								</div>
+								<div class="row searchResultCard">
+									<div class="col-2">
+										<div>角落實習生3號</div>
+									</div>
+									<div class="col-2">123@gmail.com</div>
+									<div class="col-2">0912345678</div>
+									<div class="col-2">2020-11-16</div>
+									<div class="col-2">尚未審查</div>
+
+									<div class="col-2"><U>編輯</U> <U>查看詳情</U></div>
+								</div>
+								<div class="row searchResultCard">
+									<div class="col-2">
+										<div>角落實習生4號</div>
+									</div>
+									<div class="col-2">123@gmail.com</div>
+									<div class="col-2">0912345678</div>
+									<div class="col-2">2020-11-16</div>
+									<div class="col-2">尚未審查</div>
+
+									<div class="col-2"><U>編輯</U> <U>查看詳情</U></div>
+								</div>
+							</div>
+						</div>
+						<br><br>
+					</div>
+					<br>
+
+				</div>
+				<!-- 角落實習生3,4號 尚未審查 結束-->
+
+				<!-- 角落實習生5,6號 未通過審查 -->
+				<div class="tab-pane fade" id="internsReject" role="tabpanel" aria-labelledby="contact-tab">
+					<br><br>
+					<div>
+						<br>
+						<div id="tab-4">
+							<div class="col-12">
+								<div class="row searchResultCard" style="background-color:aliceblue;">
+									<div class="col-2">
+										<div>實習生姓名</div>
+									</div>
+									<div class="col-2">Email</div>
+									<div class="col-2">電話</div>
+									<div class="col-2">註冊日期</div>
+									<div class="col-2">狀態</div>
+									<div class="col-2">管理</div>
+								</div>
+								<div class="row searchResultCard">
+									<div class="col-2">
+										<div>角落實習生5號</div>
+									</div>
+									<div class="col-2">123@gmail.com</div>
+									<div class="col-2">0912345678</div>
+									<div class="col-2">2020-11-16</div>
+									<div class="col-2">未通過審查</div>
+
+									<div class="col-2"><U>編輯</U> <U>查看詳情</U></div>
+								</div>
+								<div class="row searchResultCard">
+									<div class="col-2">
+										<div>角落實習生6號</div>
+									</div>
+									<div class="col-2">123@gmail.com</div>
+									<div class="col-2">0912345678</div>
+									<div class="col-2">2020-11-16</div>
+									<div class="col-2">未通過審查</div>
+
+									<div class="col-2"><U>編輯</U> <U>查看詳情</U></div>
+								</div>
+							</div>
+						</div>
+						<br><br>
+					</div>
+					<br>
+
+					<br><br>
+
+				</div>
+				<!-- 角落實習生5,6號 未通過審查 結束-->
+			</div>
+		</div>
+		<!-- 實習生：清單 註冊成功 審查 未通過註冊的實習 結束 -->
+
+		<br>
+		<br>
+		<!-- 廠商：清單 註冊成功 審查 未通過註冊的實習 -->
+		<div id="internsList" class="clear" style="text-align: center;display: none;">
+			<!-- <div class="col-12"> -->
+			<div class="services-item fadeInDown" data-wow-delay="0.6s" style="color: black;">
+
+				<!-- 上方頁籤主選單 -->
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" id="contact-tab" data-toggle="tab" href="#companyList" role="tab"
+							aria-controls="contact" aria-selected="false">公司清單</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" id="contact-tab" data-toggle="tab" href="#companyApproved" role="tab"
+							aria-controls="contact" aria-selected="false">公司註冊成功</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" id="contact-tab" data-toggle="tab" href="#companyReview" role="tab"
+							aria-controls="contact" aria-selected="false">待審查的實習機會</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" id="contact-tab" data-toggle="tab" href="#companyReject" role="tab"
+							aria-controls="contact" aria-selected="false">未通過審查的廠商</a>
+					</li>
+				</ul>
+			</div>
+			<div class="tab-content" id="myTabContent">
+				<!-- 角落生物公司1-6號 總清單 註冊成功 尚未審查 未通過審查-->
+				<div class="tab-pane fade" id="companyList" role="tabpanel" aria-labelledby="profile-tab">
+					<br><br>
+					<div>
+						<br>
+						<div id="tab-4">
+							<div class="col-12">
+								<div class="row searchResultCard" style="background-color:aliceblue;">
+									<div class="col-2">
+										<div>廠商姓名</div>
+									</div>
+									<div class="col-2">Email</div>
+									<div class="col-2">電話</div>
+									<div class="col-2">註冊日期</div>
+									<div class="col-2">狀態</div>
+									<div class="col-2">管理</div>
+								</div>
+								<div class="row searchResultCard">
+									<div class="col-2">
+										<div>角落生物公司1號</div>
+									</div>
+									<div class="col-2">123@gmail.com</div>
+									<div class="col-2">0912345678</div>
+									<div class="col-2">2020-11-16</div>
+									<div class="col-2">註冊成功</div>
+
+									<div class="col-2"><U>編輯</U> <U>查看詳情</U></div>
+								</div>
+								<div class="row searchResultCard">
+									<div class="col-2">
+										<div>角落生物公司2號</div>
+									</div>
+									<div class="col-2">123@gmail.com</div>
+									<div class="col-2">0912345678</div>
+									<div class="col-2">2020-11-16</div>
+									<div class="col-2">註冊成功</div>
+
+									<div class="col-2"><U>編輯</U> <U>查看詳情</U></div>
+								</div>
+								<div class="row searchResultCard">
+									<div class="col-2">
+										<div>角落生物公司3號</div>
+									</div>
+									<div class="col-2">123@gmail.com</div>
+									<div class="col-2">0912345678</div>
+									<div class="col-2">2020-11-16</div>
+									<div class="col-2">尚未審查</div>
+
+									<div class="col-2"><U>編輯</U> <U>查看詳情</U></div>
+								</div>
+								<div class="row searchResultCard">
+									<div class="col-2">
+										<div>角落生物公司4號</div>
+									</div>
+									<div class="col-2">123@gmail.com</div>
+									<div class="col-2">0912345678</div>
+									<div class="col-2">2020-11-16</div>
+									<div class="col-2">尚未審查</div>
+
+									<div class="col-2"><U>編輯</U> <U>查看詳情</U></div>
+								</div>
+								<div class="row searchResultCard">
+									<div class="col-2">
+										<div>角落生物公司5號</div>
+									</div>
+									<div class="col-2">123@gmail.com</div>
+									<div class="col-2">0912345678</div>
+									<div class="col-2">2020-11-16</div>
+									<div class="col-2">未通過審核</div>
+
+									<div class="col-2"><U>編輯</U> <U>查看詳情</U></div>
+								</div>
+								<div class="row searchResultCard">
+									<div class="col-2">
+										<div>角落生物公司6號</div>
+									</div>
+									<div class="col-2">123@gmail.com</div>
+									<div class="col-2">0912345678</div>
+									<div class="col-2">2020-11-16</div>
+									<div class="col-2">未通過審核</div>
+
+									<div class="col-2"><U>編輯</U> <U>查看詳情</U></div>
+								</div>
+							</div>
+						</div>
+						<br><br>
+					</div>
+					<br>
+
+				</div>
+				<!-- 角落生物公司1-6號 總清單 註冊成功 尚未審查 未通過審查 結束-->
+
+				<!-- 角落生物公司1,2號 註冊成功-->
+				<div class="tab-pane fade" id="companyApproved" role="tabpanel" aria-labelledby="profile-tab">
+					<br><br>
+					<div>
+						<br>
+						<div id="tab-4">
+							<div class="col-12">
+								<div class="row searchResultCard" style="background-color:aliceblue;">
+									<div class="col-2">
+										<div>廠商姓名</div>
+									</div>
+									<div class="col-2">Email</div>
+									<div class="col-2">電話</div>
+									<div class="col-2">註冊日期</div>
+									<div class="col-2">狀態</div>
+									<div class="col-2">管理</div>
+								</div>
+								<div class="row searchResultCard">
+									<div class="col-2">
+										<div>角落生物公司1號</div>
+									</div>
+									<div class="col-2">123@gmail.com</div>
+									<div class="col-2">0912345678</div>
+									<div class="col-2">2020-11-16</div>
+									<div class="col-2">註冊成功</div>
+
+									<div class="col-2"><U>編輯</U> <U>查看詳情</U></div>
+								</div>
+								<div class="row searchResultCard">
+									<div class="col-2">
+										<div>角落生物公司2號</div>
+									</div>
+									<div class="col-2">123@gmail.com</div>
+									<div class="col-2">0912345678</div>
+									<div class="col-2">2020-11-16</div>
+									<div class="col-2">註冊成功</div>
+
+									<div class="col-2"><U>編輯</U> <U>查看詳情</U></div>
+								</div>
+							</div>
+						</div>
+						<br><br>
+					</div>
+					<br>
+
+				</div>
+				<!-- 角落生物公司1,2號 註冊成功 結束-->
+
+				<!-- 角落生物公司3,4號 尚未審查-->
+				<div class="tab-pane fade" id="companyReview" role="tabpanel" aria-labelledby="profile-tab">
+					<br><br>
+					<div>
+
+						<br>
+						<div id="tab-4">
+							<div class="col-12">
+								<div class="row searchResultCard" style="background-color:aliceblue;">
+									<div class="col-2">
+										<div>廠商姓名</div>
+									</div>
+									<div class="col-2">Email</div>
+									<div class="col-2">電話</div>
+									<div class="col-2">註冊日期</div>
+									<div class="col-2">狀態</div>
+									<div class="col-2">管理</div>
+								</div>
+								<div class="row searchResultCard">
+									<div class="col-2">
+										<div>角落生物公司3號</div>
+									</div>
+									<div class="col-2">123@gmail.com</div>
+									<div class="col-2">0912345678</div>
+									<div class="col-2">2020-11-16</div>
+									<div class="col-2">尚未審查</div>
+
+									<div class="col-2"><U>編輯</U> <U>查看詳情</U></div>
+								</div>
+								<div class="row searchResultCard">
+									<div class="col-2">
+										<div>角落生物公司4號</div>
+									</div>
+									<div class="col-2">123@gmail.com</div>
+									<div class="col-2">0912345678</div>
+									<div class="col-2">2020-11-16</div>
+									<div class="col-2">尚未審查</div>
+
+									<div class="col-2"><U>編輯</U> <U>查看詳情</U></div>
+								</div>
+							</div>
+						</div>
+						</select>
+						<br><br>
+					</div>
+					<br>
+
+				</div>
+				<!-- 角落生物公司3,4號 尚未審查 結束-->
+
+				<!-- 角落生物公司5,6號 尚未審查-->
+				<div class="tab-pane fade" id="companyReject" role="tabpanel" aria-labelledby="contact-tab">
+					<br><br>
+					<div>
+
+						<br>
+						<div id="tab-4">
+							<div class="col-12">
+								<div class="row searchResultCard" style="background-color:aliceblue;">
+									<div class="col-2">
+										<div>廠商姓名</div>
+									</div>
+									<div class="col-2">Email</div>
+									<div class="col-2">電話</div>
+									<div class="col-2">註冊日期</div>
+									<div class="col-2">狀態</div>
+									<div class="col-2">管理</div>
+								</div>
+								<div class="row searchResultCard">
+									<div class="col-2">
+										<div>角落生物公司5號</div>
+									</div>
+									<div class="col-2">123@gmail.com</div>
+									<div class="col-2">0912345678</div>
+									<div class="col-2">2020-11-16</div>
+									<div class="col-2">未通過審核</div>
+
+									<div class="col-2"><U>編輯</U> <U>查看詳情</U></div>
+								</div>
+								<div class="row searchResultCard">
+									<div class="col-2">
+										<div>角落生物公司6號</div>
+									</div>
+									<div class="col-2">123@gmail.com</div>
+									<div class="col-2">0912345678</div>
+									<div class="col-2">2020-11-16</div>
+									<div class="col-2">未通過審核</div>
+
+									<div class="col-2"><U>編輯</U> <U>查看詳情</U></div>
+								</div>
+							</div>
+						</div>
+						</select>
+						<br><br>
+					</div>
+					<br>
+					<br><br>
+				</div>
+				<!-- 角落生物公司5,6號 尚未審查 結束-->
+			</div>
+
+		</div>
+		<!-- 廠商：右側區清單區塊 註冊成功 審查 未通過註冊的實習 結束-->
+	</div>
+	<!-- Main 右側區清單區塊 結束-->
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<br>
+	<br>
+	</div>
+
+	<!-- Footer -->
+	<div id="footer">
+
+		<!-- Copyright -->
+		<ul class="copyright">
+			<li>&copy; 實習趣. 版權所有</li>
+			<li>資策會 <a href="https://www.iiiedu.org.tw/f2e/">前端工程師養成班學員製作</a></li>
+		</ul>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<!-- JAVASCRIPTS -->
+	<script src="layout/scripts/jquery.min.js"></script>
+	<script src="layout/scripts/jquery-ui.min.js"></script>
+	<script src="layout/scripts/jquery.backtotop.js"></script>
+	<script src="layout/scripts/jquery.mobilemenu.js"></script>
+	<!-- IE9 Placeholder Support -->
+	<script src="layout/scripts/jquery.placeholder.min.js"></script>
+	<script src="assets/js/jquery-min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.mixitup.js"></script>
+	<script src="assets/js/jquery.counterup.min.js"></script>
+	<script src="assets/js/waypoints.min.js"></script>
+	<script src="assets/js/wow.js"></script>
+	<script src="assets/js/jquery.nav.js"></script>
+	<script src="assets/js/jquery.easing.min.js"></script>
+	<script src="assets/js/nivo-lightbox.js"></script>
+	<script src="assets/js/jquery.slicknav.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/form-validator.min.js"></script>
+	<script src="assets/js/contact-form-script.min.js"></script>
+	<script src="assets/js/map.js"></script>
+	<script src="js/sign/sign.js"></script>
+	<!-- / IE9 Placeholder Support -->
+</body>
+
+</html>

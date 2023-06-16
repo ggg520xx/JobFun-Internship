@@ -1,0 +1,42 @@
+.form-contro9 {
+    width: 60%;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border-radius: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    padding: 8px 10px;
+    border: 1px solid #e1e1e1;
+  }
+
+  .section-title2 {
+    color: #252525;
+    font-size: 38px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1;
+    /* margin-bottom: 48px; */
+    padding: 0 10px;
+    position: relative;
+  }
+
+  .section-title {
+    color: #252525;
+    font-size: 38px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1;
+    /* margin-bottom: 48px; */
+    padding: 0 10px;
+    position: relative;
+  }
+
+  .labelLay{
+    display: inline-block; 
+    width: 30%;
+    text-align: right;
+    vertical-align: middle;
+    /* border: 1px solid black; */
+    /* padding-bottom:11px ; */
+} 

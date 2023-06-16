@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>實習趣-你最佳的好幫手</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Fonts -->
+  <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome.min.css">
+  <!-- Icon -->
+  <link rel="stylesheet" type="text/css" href="assets/fonts/simple-line-icons.css">
+  <!-- Slicknav -->
+  <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
+  <!-- Menu CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/menu_sideslide.css">
+  <!-- Slider CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/slide-style.css">
+  <!-- Nivo Lightbox -->
+  <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css">
+  <!-- Animate -->
+  <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+  <!-- Main Style -->
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <!-- Responsive Style -->
+  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="css/public.css">
+  <link rel="stylesheet" href="css/search/search.css">
+  <link rel="stylesheet" href="css/member/member.css">
+  <link rel="stylesheet" href="css/company/company.css">
+  <link rel="stylesheet" href="css/company/profile.css">
+
+  <!-- icon -->
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+<body id="top">
+  <!-- Header Area wrapper Starts -->
+  <header id="header-wrap">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo navbarNoMove" style="height: 70px;">
+      <div class="container" style="padding: 0;">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
+            aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="icon-menu"></span>
+            <span class="icon-menu"></span>
+            <span class="icon-menu"></span>
+          </button>
+          <a href="index.html" class="navbar-brand">
+            <h4>實習趣</h4>
+          </a>
+
+        </div>
+        <div class="collapse navbar-collapse" id="main-navbar">
+          <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix">
+            <li class="nav-item">
+              <a class="nav-link" href="pay1.html">
+                <u style="color: red;">成為VIP黃金會員</u>
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="search.html">
+                實習職缺
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">
+                最新公告
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">
+                職缺管理
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resume">
+                關於實習趣
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolios">
+                聯絡我們
+              </a>
+            </li>
+            <li class="nav-item">
+              <!-- <a class="nav-link" href="">登入</a> -->
+              <a class="nav-link" href=""><i class="fas fa-user-circle">登入</i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Start -->
+      <ul class="onepage-nev mobile-menu">
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#about">about</a>
+        </li>
+        <li>
+          <a href="#services">Services</a>
+        </li>
+        <li>
+          <a href="#resume">resume</a>
+        </li>
+        <li>
+          <a href="#portfolio">Work</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+      <!-- Mobile Menu End -->
+    </nav>
+    <!-- Navbar End -->
+  </header>
+  <!-- Header Area wrapper End -->
+
+
+  <div class="wrapper row3">
+    <main class="hoc container clear">
+      <!-- main body -->
+      <div id="tabs" class="clear" style="color: black;">
+        <div class="one_quarter first">
+          <ul>
+            <li style="border: none;">
+              <div class="profile-pic-div">
+                <img src="img/company/company.png" id="photo" style="height: 100px;width: 100px;">
+                <input type="file" id="file">
+                <label for="file" id="uploadBtn">Choose Photo</label>
+              </div>
+
+            </li>
+            <li style="border: none;margin-top: 10px;" class="userName">
+              <h5>新新公司</h5>
+            </li>
+            <li style="margin-top: 10px;"><a href="#tab-0">會員中心</a></li>
+            <li><a href="#tab-1">新增與管理職缺</a></li>
+            <!-- <li><a href="#tab-2">管理職缺</a></li> -->
+            <!-- <li><a href="#tab-3">履歷讀取</a></li> -->
+            <li><a href="#tab-4">應徵紀錄</a></li>
+            <li><a href="#tab-5">修改個人資料</a></li>
+          </ul>
+        </div>
+        <div class="three_quarter">
+
+          <div id="tab-0" class="clear" style="text-align: left; margin:auto">
+            <div class="col-12">
+
+              <div class="services-item fadeInDown" data-wow-delay="0.6s" style="color: black; ">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                      aria-controls="home" aria-selected="true">基本資料</a>
+                  </li>
+                  
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                      aria-controls="contact" aria-selected="false">廠商介紹</a>
+                  </li>
+
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                      aria-controls="profile" aria-selected="false">相片上傳</a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="col-5 company-detail-1" style="margin:auto ; text-align:left ">
+                      <br><br>
+                      <!-- <h3>基本資料</h3> -->
+                      <!-- <hr> -->
+                      <br>
+
+
+                      <label for=" CompanyName" class="resumeDetail">廠商名稱:新新公司</label>&emsp13;
+                      <!-- <input type="date" class="resumeDetail"> -->
+                      <br><br>
+
+                      <label for="companyPhone" class="resumeDetail">廠商電話:04-23111111</label>&emsp13;
+
+
+                      <br><br>
+                      <label for="companyEmail" class="resumeDetail">廠商信箱:1234@gmail.com</label>&emsp13;
+                      <!-- <input type="text" class="resumeDetail"> -->
+                      <br><br>
+
+
+                      <!-- <button class="filter btn btn-common" data-filter=".design">修改</button> -->
+
+                    </div>
+                  </div>
+                  <div class="tab-pane fade " id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                   
+
+
+
+                    這邊放圖片
+
+                  </div>
+
+                  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <br>
+                    <br>
+
+
+                    <div class="col-6 company-detail" style="text-align: center;margin:auto ">
+                      <label for="companyArea" class="resumeDetail" name="companyArea">廠商地區:</label>&emsp13;
+                      <input type="text" class="resumeDetail" placeholder="" value="">
+                      <br><br>
+                      <label for="companyAddress" class="resumeDetail" name="companyAddress">廠商地址:</label>&emsp13;
+                      <input type="text" class="resumeDetail" placeholder="" value="">
+                      <br><br>
+                      <label for="companyIntro" class="resumeDetail" name="companyIntro">詳細介紹:</label>&emsp13;
+                      <textarea name="companyIntro" id="companyIntro" cols="25" rows="5" style="margin: auto;"
+                        placeholder="" value=""></textarea>
+                      <br><br>
+                      <button class="filter btn btn-common" data-filter=".design">確認</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="tab-1" class="clear" style="">
+            <!-- 新增彈跳按鈕-->
+
+            <div class="row mb-3 mr-3">
+              <div class="col-12 text-right">
+                <button class="btn btn-common">新增</button>
+              </div>
+            </div>
+
+            <!-- 一組開頭 -->
+            <div>
+
+              <div class="card" mt-2>
+                <div class="card-body row">
+                  <div class="col-6">
+                    <h5 class="card-title"><a href="">経理・財務・会計スタッフ</a></h5>
+                    <h6>飛斯戴爾有限公司</h6>
+                    <h6>台中市西屯區</h6>
+                    <h5>狀態：<u style="color: red;">上架</u></h5>
+                  </div>
+                  <div class="col-6 position-relative">
+                    <div class="position-absolute fixed-bottom text-right mr-3">
+                      <button class="btn btn-common">下架</button>
+                      <button class="btn btn-common">刪除</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            <!-- 一組結尾 -->
+            
+            <div>
+
+              <div class="card">
+                <div class="card-body row">
+                  <div class="col-6">
+                    <h5 class="card-title"><a href="">経理・財務・会計スタッフ</a></h5>
+                    <h6>飛斯戴爾有限公司</h6>
+                    <h6>台中市西屯區</h6>
+                    <h5>狀態：<u style="color: red;">上架</u></h5>
+                  </div>
+                  <div class="col-6 position-relative">
+                    <div class="position-absolute fixed-bottom text-right mr-3">
+                      <button class="btn btn-common">下架</button>
+                      <button class="btn btn-common">刪除</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            
+
+
+
+          </div>
+
+
+
+
+
+          <!-- --------------------------------------------------------- -->
+          <!-- --------------------------------------------------------- -->
+          <!-- --------------------------------------------------------- -->
+
+          <div id="tab-4">
+            <div class="col-12">
+              <section id="faq">
+                <!-- <div class="container"> -->
+
+                <div class="section-header">
+                  <h3 class="section-title">實習生履歷確認</h3>
+                  <span class="section-divider"></span>
+                  <!-- <p class="section-description">實習生職缺投遞 - 履歷查看及確認</p> -->
+                </div>
+
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <ul id="faq-list" class="wow fadeInUp">
+                      <li>
+                        <a data-toggle="collapse" class="collapsed" href="#faq1">
+
+                          <div class="row searchResultCard" style="background-color:aliceblue;">
+                            <div class="col-12 justify-content">
+                              <div class="">Full/Frontend Stack Engineer</div>
+                            </div>
+
+                            <div class="col-12 text-left">
+                              <div>目前履歷數：20人 投遞</div>
+                            </div>
+
+                    
+                          </div>
+
+                          <i class="ion-android-remove"></i>
+                        </a>
+
+
+
+                        <div id="faq1" class="collapse" data-parent="#faq-list">
+                          <p>
+                          <div class="row searchResultCard">
+                            <div class="col-6">
+                              <div>Steve Jobs</div>
+                            </div>
+                            <div class="col-6 text-right"><button class="btn btn-common ">查看</button></div>
+                          </div>
+                          </p>
+
+                          <p>
+                          <div class="row searchResultCard">
+                            <div class="col-6">
+                              <div>Bill Gates</div>
+                            </div>
+                            <div class="col-6 text-right"><button button class="btn btn-common ">查看</button></div>
+
+                          </div>
+                          </p>
+                      </li>
+
+
+
+
+
+
+
+
+
+
+                      <li>
+                        <a data-toggle="collapse" class="collapsed" href="#faq2">
+
+                          <div class="row searchResultCard" style="background-color:aliceblue;">
+                            <div class="col-12 justify-content">
+                              <div class="">API/MySQL-資料庫串接</div>
+                            </div>
+
+                            <div class="col-12 text-left">
+                              <div>目前履歷數：3人 投遞</div>
+                            </div>
+
+                         
+                          </div>
+
+                          <i class="ion-android-remove"></i>
+                        </a>
+
+
+
+                        <div id="faq2" class="collapse" data-parent="#faq-list">
+                          <p>
+                          <div class="row searchResultCard">
+                            <div class="col-6">
+                              <div>Steve Jobs</div>
+                            </div>
+                            <div class="col-6"><button>查看</button></div>
+                          </div>
+                          </p>
+
+                          <p>
+                          <div class="row searchResultCard">
+                            <div class="col-6">
+                              <div>Bill Gates</div>
+                            </div>
+                            <div class="col-6"><button>查看</button></div>
+                          </div>
+                          </p>
+                      </li>
+
+                     
+                    </ul>
+                  </div>
+                 
+
+
+
+
+                 
+             
+
+
+
+
+
+
+                  <div class="col-md-6" id="show_here">
+                    <div class="services-item  fadeInDown" data-wow-delay="0.6s" style="color: black;">
+
+
+                      <div class="tab-content">
+                      
+                        <h3>個人資料</h3>
+                        <br>
+                        <h5 class="resumeDetail">姓名:</h5>
+                        <h6 class="resumeDetail">王曉明</h6>
+                        <hr>
+                        <h5 class="resumeDetail">生日:</h5>
+                        <h6 class="resumeDetail">1996/08/01</h6>
+                        <hr>
+                        <h5 class="resumeDetail">電話:</h5>&emsp13;
+                        <h6 class="resumeDetail">0123456789</h6>
+                        <hr>
+                        <h5 class="resumeDetail">E-mail:</h5>&emsp13;
+                        <h6 class="resumeDetail">abc123@gmail.com</h6>
+                        <hr>
+                        <h5 class="resumeDetail">就讀大學:</h5>&emsp13;
+                        <h6 class="resumeDetail">台中科技大學</h6>
+                        <hr>
+                        <h5 class="resumeDetail">科系類別:</h5>&emsp13;
+                        <h6 class="resumeDetail">語文類</h6>
+                        <hr>
+                        <h5 class="resumeDetail">就讀科系:</h5>&emsp13;
+                        <h6 class="resumeDetail">應用日語系</h6>
+
+                        <br>
+
+
+                        <div class="d-flex modal-footer ">
+
+                          <div class=" mr-auto ml-auto border-0 pt-3">
+                            <button class="btn btn-info">詳細履歷</button>
+                          </div>
+
+
+                          <div class="mr-auto ml-auto border-0 pt-4">
+                            <button class="btn btn-danger">婉拒回覆</button>
+                            <button class="btn btn-success">邀請面試</button>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </section>
+          </div>
+
+          <!-- --------------------------------------------------------- -->
+          <!-- --------------------手風琴結束----------------------------- -->
+          <!-- --------------------------------------------------------- -->
+
+
+
+
+
+
+
+
+
+
+
+          <div id="tab-5">
+            <div class="col-12">
+
+              <div class="services-item  fadeInDown" data-wow-delay="0.6s" style="color: black;">
+
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <h3>修改資料</h3>
+                    <hr>
+                    <!-- <br> -->
+                    <div class="col-5 company-detail" style="text-align: center;margin:auto">
+
+
+                      <label for="companyAccount" class="resumeDetail">廠商帳號:</label>&emsp13;
+                      <input type="text" name="companyAccount" id="companyAccount" class="resumeDetail" placeholder=""
+                        value="abc12345">
+                      <br><br>
+
+
+                      <label for="companyPassword" class="resumeDetail">廠商密碼:</label>&emsp13;
+                      <input type="password" name="companyPassword" id="companyPassword" class="resumeDetail"
+                        placeholder="" value="abc12345">
+                      <br><br>
+                      <label for="companyPassword" class="resumeDetail">確認密碼:</label>&emsp13;
+                      <input type="password" name="confirmPassword" id="confirmPassword" class="resumeDetail"
+                        placeholder="" value="abc12345">
+                      <br><br>
+                      <label for="CompanyName" class="resumeDetail">廠商姓名:</label>&emsp13;
+                      <input type="text" name="jobName" id="jobName" class="resumeDetail" placeholder="" value="新新公司">
+                      <br><br>
+                      <label for="companyPhone" class="resumeDetail">廠商電話:</label>&emsp13;
+                      <input type="text" name="companyPhone" id="companyPhone" class="resumeDetail" placeholder=""
+                        value="04-23111111">
+                      <br><br>
+
+                      <label for="companyEmail" class="resumeDetail">廠商信箱:</label>&emsp13;
+                      <input type="email" name="companyEmail" id="companyEmail" class="resumeDetail" placeholder=""
+                        value="1234@gmail.com"></input>
+                      <br><br>
+
+
+                      <button class="filter btn btn-common" data-filter=".design">確認</button>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+      </div>
+  </div>
+  </div>
+  </main>
+  </div>
+
+  <!-- Footer Section Start -->
+  <footer class="footer-area section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-text text-center  fadeInDown" data-wow-delay="0.3s">
+            <ul class="social-icon">
+              <li>
+                <a class="facebook" href="#"><i class="icon-social-facebook"></i></a>
+              </li>
+              <li>
+                <a class="twitter" href="#"><i class="icon-social-twitter"></i></a>
+              </li>
+              <li>
+                <a class="instagram" href="#"><i class="icon-social-instagram"></i></a>
+              </li>
+              <li>
+                <a class="instagram" href="#"><i class="icon-social-linkedin"></i></a>
+              </li>
+              <li>
+                <a class="instagram" href="#"><i class="icon-social-google"></i></a>
+              </li>
+            </ul>
+            <p>實習趣. 版權所有</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- JAVASCRIPTS -->
+  <script src="layout/scripts/jquery.min.js"></script>
+  <script src="layout/scripts/jquery-ui.min.js"></script>
+  <script src="layout/scripts/jquery.backtotop.js"></script>
+  <script src="layout/scripts/jquery.mobilemenu.js"></script>
+  <!-- IE9 Placeholder Support -->
+  <script src="layout/scripts/jquery.placeholder.min.js"></script>
+  <script src="assets/js/jquery-min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.mixitup.js"></script>
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <script src="assets/js/waypoints.min.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/jquery.nav.js"></script>
+  <script src="assets/js/jquery.easing.min.js"></script>
+  <script src="assets/js/nivo-lightbox.js"></script>
+  <script src="assets/js/jquery.slicknav.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/form-validator.min.js"></script>
+  <script src="assets/js/contact-form-script.min.js"></script>
+  <script src="assets/js/map.js"></script>
+  <script src="js/sweetalert/sweetalert.min.js"></script>
+  <script src="js/company/profile-image.js"></script>
+  <script src="js/company/company.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js"></script>
+
+  <!-- / IE9 Placeholder Support -->
+</body>
+
+</html>

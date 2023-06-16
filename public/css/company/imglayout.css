@@ -1,0 +1,7 @@
+.form-input img{
+    object-fit: contain;
+}
+
+.profile-pic-div img{
+    object-fit: cover;
+}

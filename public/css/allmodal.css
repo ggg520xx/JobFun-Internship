@@ -1,0 +1,13 @@
+/* 地區選擇排版 */
+
+.arealay{
+    font-size: 16px;
+    color: black;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+.arealaylabel{
+    margin-left: 5px;
+    color: black;
+}

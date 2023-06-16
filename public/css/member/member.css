@@ -1,0 +1,249 @@
+body {
+  font-family: "";
+  /* background-color: rgba(246, 124, 124, 1); */
+ /* background-image: url(../../img/bg/321bg.jpg); */
+ background-repeat: no-repeat;
+ background-position: center center;
+ background-size: cover;
+
+}
+
+.profileImg {
+  width: 100px;
+  height: 100px;
+  padding-left: 200px;
+}
+
+/* Style the tab */
+.tab {
+  float: left;
+  /* border: 1px solid #ccc; */
+  /* background-color: rgba(0, 0, 0, 0.05); */
+  width: 20%;
+  height: 100%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  height: 100%;
+  
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 30px;
+  width: 80%;
+  border-left: none;
+  height: fit-content;
+  /* background-color: rgba(0, 0,0, 0.05); */
+  margin-top: 30px;
+}
+
+.profileImg {
+  padding-left: 55px;
+  padding-top: 15px;
+  margin-bottom: 30px;
+  vertical-align: center;
+}
+
+.userName {
+  text-align: center;
+}
+
+.resumeDetail{
+  display: inline-block;
+}
+
+.changepagefont {
+  font-family:"Source Sans Pro", sans-serif;
+}
+
+body.modal-open {
+    padding-right: 0px !important;
+    overflow-y: auto;
+}
+
+.modalDetail{
+  overflow:auto;
+  max-height:90vh;
+}
+
+.editInputLay{
+  display: inline-block; 
+  width: 40%;
+  color: black !important;
+  height: 38px;
+  vertical-align: middle;
+}
+
+
+.outercard{
+  text-align: left;
+  padding-top:  11px;
+  padding-left: 60px;
+  color: black;
+  font-size: 18px;
+  font-weight:700;
+}
+
+.collectlink{
+  font-weight:700;
+}
+
+/* .img_opacity{
+  background-image: url(../../img/member/123.jpg);
+} */
+
+.h5control {
+  font-size: 1.5em;
+}
+
+.section-title-member{
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+
+#tab-4 > .table th, .table td {
+
+  vertical-align: middle;
+
+
+}
+
+.navlogo_member{
+/* height: 100px; */
+}
+
+/* .navlogo_member img{
+ 
+} */
+
+.lconlogo_logomember{
+ object-fit: contain;
+  height: 60px;
+  width: 60px;
+}
+.lconlogo_textmember{
+ object-fit: contain;
+  height: auto;
+  width: 165px;
+}
+
+
+
+
+
+/* 大紙飛機 */
+
+/* .big_member_tips > img {
+  height: auto;
+  width:  650px;
+
+} */
+
+/* .big_member_tips {
+  text-align: right;
+} */
+
+
+
+
+/* 小紙飛機 */
+
+/* .member_tips > img {
+  height: auto;
+  width:  200px;
+}
+.member_tips {
+  text-align: right;
+} */
+
+
+/* text 的紙飛機 */
+
+.text_member_tips > img {
+  height: auto;
+  width:  600px;
+
+}
+
+
+.resumeTitle{
+  vertical-align: top;
+}
+
+
+
+.applyBtnM{
+    
+  width: 90px;
+  height: 35px;
+  position: relative;
+  text-align: center;
+}
+
+.applyBtnTopM{
+  width: 85px;
+  height: 35px;
+  position: absolute;
+  padding: 0px 5px 0px 5px;
+  border-radius: 20px;
+  background-color: #313440;
+  line-height: 30px;
+  z-index: 2;
+  top:-3px;
+  left: 0px;
+  transition: all 0.1s;
+  white-space:nowrap;
+}
+
+.applyBtnTopM:hover{
+  top:0px;
+  background-color:#3c77b2;
+  transition: all 0.1s;
+}
+.applyBtnTextM{
+  padding-top: 3px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  color: white; /*字體顏色*/
+}
+
+/* color: #fff;
+background-color: #313440; */
+
+.applyBtnPaperM{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  background-image: url(../../img/search/paperairplan.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}

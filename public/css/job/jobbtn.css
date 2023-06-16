@@ -1,0 +1,12 @@
+
+.applyBtnPaperApply{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background-image: url(../../img/search/paperairplan.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-right: 12px;
+}

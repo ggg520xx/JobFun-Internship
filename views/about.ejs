@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>實習趣-你最佳的好幫手</title>
+  <link rel="icon" href="img/ico/favicon.ico" type="image/x-icon" />
+  <meta name="keywords" content="css3, html5, js, background video, fullscreen video">
+  <meta name="description" content="Super easy to implement HTML5 fullscreen background video library in JavaScript.">
+
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <!-- Fonts -->
+  <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome.min.css">
+  <!-- Icon -->
+  <link rel="stylesheet" type="text/css" href="assets/fonts/simple-line-icons.css">
+  <!-- Slicknav -->
+  <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
+  <!-- Menu CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/menu_sideslide.css">
+  <!-- Slider CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/slide-style.css">
+  <!-- Nivo Lightbox -->
+  <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css">
+  <!-- Animate -->
+  <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+  <!-- Main Style -->
+  <link rel="stylesheet" type="text/css" href="assets/css/main_forindex.css">
+  <!-- Responsive Style -->
+  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/main.css"> -->
+
+
+
+  <link href="navbar_css_icon/styles/navbar.css" rel="stylesheet" type="text/css" media="all">
+
+
+
+
+  <!-- navbar 樣板引用 -->
+  <!-- JAVASCRIPTS -->
+  <script src="js/template/jquery.min.js"></script>
+  <script src="js/template/jquery-ui.min.js"></script>
+  <script src="js/template/jquery.backtotop.js"></script>
+  <script src="js/template/jquery.mobilemenu.js"></script>
+  <!-- IE9 Placeholder Support -->
+  <script src="js/template/jquery.placeholder.min.js"></script>
+  <!-- / IE9 Placeholder Support -->
+
+  <link rel="stylesheet" href="css/search/search.css">
+
+  <script src="js/search/search.js"></script>
+
+  <!-- <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8899112.js"></script> -->
+
+
+
+  <style>
+    /* * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    } */
+
+    #container {
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      text-align: center;
+    }
+
+    #background_video {
+      position: absolute;
+
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+
+    #video_cover {
+      position: absolute;
+
+      width: 100%;
+      height: 100%;
+
+      background: url('video_cover.jpeg') no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    #video_controls {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+
+    /* #play img {
+      width: 100px;
+    }
+
+    #pause img {
+      width: 90px;
+    }
+
+    #pause {
+      display: none;
+    } */
+
+    @media (min-width: 768px) {
+      #video_controls {
+        display: none;
+      }
+    }
+
+    /* Demo page specific styles */
+
+    /* body {
+      text-align: center;
+      font-family: 'proxima-nova', Helvetica;
+    } */
+
+    #container {
+      height: 100%;
+    }
+
+    /* #overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+    } */
+
+    #main_content {
+      z-index: 2;
+      position: relative;
+      display: inline-block;
+
+      /* Vertical center */
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    #main_content h1 {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-family: 'proxima-nova-condensed', Helvetica;
+      color: #fff;
+      font-size: 35px;
+    }
+
+    #main_content .sub_head {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 18px;
+    }
+
+    #main_content .info {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 12px;
+      margin-top: 10px;
+    }
+
+    #links {
+      margin-top: 50px;
+    }
+
+    #links a {
+      border: 2px solid rgba(255, 255, 255, 0.20);
+      border-radius: 61px;
+      font-size: 12px;
+      color: #FFFFFF;
+      letter-spacing: 1px;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 10px 25px;
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    /* #footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    #footer a {
+      color: rgba(255, 255, 255, 0.5);
+      text-decoration: none;
+      margin: 10px;
+      font-size: 12px;
+    }
+
+    #footer a:first-child {
+      float: left;
+    }
+
+    #footer a:last-child {
+      float: right;
+    } */
+  </style>
+
+  <script src="https://use.typekit.net/nlq1kdt.js"></script>
+  <script>try { Typekit.load({ async: true }); } catch (e) { }</script>
+</head>
+
+
+
+
+<body>
+  <div class="wrapper row0">
+    <div id="topbar" class="hoc clear">
+      <!-- ----------------------------------------------------------------- -->
+      <div class="fl_left">
+        <ul class="nospace inline pushright">
+          <li><i class="fa fa-phone"></i> +886 . (0912) 345 6789</li>
+          <li><i class="fa fa-envelope-o"></i> admin@gmail.com</li>
+        </ul>
+      </div>
+      <div class="fl_right">
+        <ul class="faico clear">
+          <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="faicon-pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
+          <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
+          <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+          <li><a class="faicon-rss" href="#"><i class="fa fa-rss"></i></a></li>
+        </ul>
+      </div>
+      <!-- ----------------------------------------------------------------- -->
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- Header Area wrapper Starts -->
+  <header id="header-wrap">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top-me scrolling-navbar indigo navbarNoMove">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
+            aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="icon-menu"></span>
+            <span class="icon-menu"></span>
+            <span class="icon-menu"></span>
+          </button>
+
+
+
+          <div class="navlogo">
+            <a href="index"><img class="lconlogo" src="img/logo/logo.png" alt="">
+            </a>
+            <a href="index"><img class="lconlogo" src="img/logo/logowhite.png" alt="">
+            </a>
+            <!-- <a href="/index" class="navbar-brand">
+              <h1>實習趣</h1> -->
+            </a>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="collapse navbar-collapse topBotomBordersOut" id="main-navbar">
+          <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix navStyle">
+            <li class="nav-item active">
+              <a class="nav-link" href="#hero-area">
+                實習職缺
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">
+                最新公告
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">
+                職缺管理
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resume">
+                關於實習趣
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolios">
+                聯絡我們
+              </a>
+            </li>
+            <li class="nav-item">
+              <% if( sessionUserCharacter == "company"){  %>
+              <a class="nav-link" href="/company">
+                <%= sessionUserName %> 會員中心
+              </a>
+            <li>
+              <a class="nav-link" href="/signout">
+                登出
+              </a>
+            </li>
+            <% }else if (sessionUserCharacter == "student"){ %>
+            <a class="nav-link" href="/member">
+              <%= sessionUserName %> 會員中心
+            </a>
+            <li>
+              <a class="nav-link" href="/signout">
+                登出
+              </a>
+            </li>
+            <% }else{ %>
+            <a class="nav-link" href="/signinstudent">
+              登入
+            </a>
+            <% } %>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Start -->
+      <ul class="onepage-nev mobile-menu">
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#about">about</a>
+        </li>
+        <li>
+          <a href="#services">Services</a>
+        </li>
+        <li>
+          <a href="#resume">resume</a>
+        </li>
+        <li>
+          <a href="#portfolio">Work</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+      <!-- Mobile Menu End -->
+    </nav>
+    <!-- Navbar End -->
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container" style="background-color: red;">
+
+      123
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Hero Area Start -->
+
+    <div id="hero-area" class="hero-area-bg">
+
+
+      <div id="container">
+        <!-- ------------------------------- -->
+        <!-- ------------------------------- -->
+        <video id="background_video" loop muted></video>
+        <div id="video_cover"></div>
+
+
+
+        <section id="main_content">
+          <div id="head">
+            <h1>Bideo.js</h1>
+            <p class="sub_head">A JS library that makes it super easy to add fullscreen background videos.</p>
+            <p class="info">(Hold on! The video might take a while to load.)</p>
+          </div>
+
+          <div id="links">
+            <a href="https://github.com/rishabhp/bideo.js">View on Github</a>
+            <a href="http://codetheory.in/html5-fullscreen-background-video/">How it works</a>
+          </div>
+
+          <div id="links"> <a href="">123</a></div>
+        </section>
+      </div>
+
+
+      <!-- <div id="footer">
+        <a href="http://twitter.com/_rishabhp">Follow on Twitter</a>
+    
+        <a href="https://twitter.com/share" class="twitter-share-button" data-via="_rishabhp">Tweet</a>
+        <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+    
+        <a href="https://www.youtube.com/watch?v=w7JrHIHi8t0" target="_blank">
+          Video by shortenit
+        </a>
+      </div> -->
+
+      <script src="bideo.js"></script>
+      <script src="main.js"></script>
+
+      <script>
+        if (window.location.host.indexOf('github.io') !== -1 && window.location.protocol !== "https:") {
+          window.location.protocol = "https";
+        }
+      </script>
+      <!-- ------------------------------- -->
+      <!-- ------------------------------- -->
+
+
+
+
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 text-center">
+            <div class="contents">
+
+
+              <br>
+              <br>
+
+
+              <!-- <h5 class="script-font wow fadeInUp" data-wow-delay="0.2s">Welcome to internship fun</h5>
+              <p class="script-font wow fadeInUp changepagefont" data-wow-delay="0.6s">這裡有你要的實習機會</p> -->
+
+              <!-- <h2 class="head-title wow fadeInUp changepagefont " data-wow-delay="0.4s">歡迎光臨實習趣</h2> -->
+
+
+
+              <br>
+              <br>
+
+
+
+
+              <br>
+
+
+
+
+              <br>
+              <br>
+              <!-- <h3 class="head-title wow fadeInUp changepagefont h3control " data-wow-delay="0.4s">歡迎光臨實習趣</h3> -->
+              <br>
+              <br>
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero Area End -->
+
+  </header>
+  <!-- Header Area wrapper End -->
+
+
+
+
+  <!-- <div style="background-color: white;">
+    <blockquote class=" blockquote"
+        style="position: relative; justify-content: center; height: 50px; background-color: white;">
+        <footer style="font-size: 30px; text-align:center " class="blockquote-footer">瀏覽職缺 </footer>
+    </blockquote>
+</div> -->
+
+
+
+
+  <!-- Services Section Start -->
+  <section id="services" class="services section-padding">
+    <h2 class="section-title wow flipInX" data-wow-delay="0.4s">關於實習趣</h2>
+    <div class="container">
+      <div class="row">
+        <!-- Services item -->
+        <div class="col-md-6 col-lg-3 col-xs-12">
+          <div class="services-item wow fadeInDown" data-wow-delay="0.3s">
+            <div class="icon">
+              <i class="icon-grid"></i>
+            </div>
+            <div class="services-content">
+              <h3><a href="#">實習趣介紹</a></h3>
+              <p>許多事情都和在學校學的不一樣，進入企業實習能訓練你的專業能力、擴大你的視野。</p>
+            </div>
+          </div>
+        </div>
+        <!-- Services item -->
+        <div class="col-md-6 col-lg-3 col-xs-12">
+          <div class="services-item wow fadeInDown" data-wow-delay="0.6s">
+            <div class="icon">
+              <i class="icon-layers"></i>
+            </div>
+            <div class="services-content">
+              <h3><a href="#">實習生的優勢</a></h3>
+              <p>有足夠的時間摸索並持續增進工作表現，觀察職場生態，研究上司的思考模式。</p>
+            </div>
+          </div>
+        </div>
+        <!-- Services item -->
+        <div class="col-md-6 col-lg-3 col-xs-12">
+          <div class="services-item wow fadeInDown" data-wow-delay="0.9s">
+            <div class="icon">
+              <i class="icon-briefcase"></i>
+            </div>
+            <div class="services-content">
+              <h3><a href="#">實習廠商優勢</a></h3>
+              <p>找到更加適合企業文化、價值觀的人才從而有效降低企業用人的風險。</p>
+            </div>
+          </div>
+        </div>
+        <!-- Services item -->
+        <div class="col-md-6 col-lg-3 col-xs-12">
+          <div class="services-item wow fadeInDown" data-wow-delay="1.2s">
+            <div class="icon">
+              <i class="icon-bubbles"></i>
+            </div>
+            <div class="services-content">
+              <h3><a href="#">實習趣客服</a></h3>
+              <p>透過實習趣的實習生或是廠商尋找對方，實習趣提供客服的專業媒合指導。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Services Section End -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Resume Section Start -->
+  <div id="resume" class="section-padding">
+
+
+    <!-- Counter Area Start-->
+    <section class="counter-section section-padding">
+      <div class="container">
+        <div class="row">
+          <!-- Counter Item -->
+          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
+            <div class="counter wow fadeInDown" data-wow-delay="0.3s">
+              <div class="icon"><i class="icon-briefcase"></i></div>
+              <div class="counterUp">999</div>
+              <p>實習機會</p>
+            </div>
+          </div>
+          <!-- Counter Item -->
+          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
+            <div class="counter wow fadeInDown" data-wow-delay="0.6s">
+              <div class="icon"><i class="icon-check"></i></div>
+              <div class="counterUp">520</div>
+              <p>媒合成功</p>
+            </div>
+          </div>
+          <!-- Counter Item -->
+          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
+            <div class="counter wow fadeInDown" data-wow-delay="0.9s">
+              <div class="icon"><i class="icon-diamond"></i></div>
+              <div class="counterUp">150</div>
+              <p>實習公司</p>
+            </div>
+          </div>
+          <!-- Counter Item -->
+          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
+            <div class="counter wow fadeInDown" data-wow-delay="1.2s">
+              <div class="icon"><i class="icon-heart"></i></div>
+              <div class="counterUp">888</div>
+              <p>實習生</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Counter Area End-->
+
+    <!-- Contact Section Start -->
+    <section id="portfolios" class="section-padding">
+      <div class="contact-form">
+        <div class="container">
+          <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.4s">
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <div class="contact-block">
+                <h2>聯絡我們</h2>
+                <form id="contactForm">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="姓名" required
+                          data-error="Please enter your name">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" placeholder="Email" id="email" class="form-control" name="email" required
+                          data-error="Please enter your email">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input type="text" placeholder="電話" id="msg_subject" class="form-control" required
+                          data-error="Please enter your subject">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <textarea class="form-control" id="message" placeholder="留言內容" rows="5"
+                          data-error="Write your message" required></textarea>
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <div class="submit-button">
+                        <button class="btn btn-common" id="submit" type="submit">送出訊息</button>
+                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                        <div class="clearfix"></div>
+                      </div>
+                      <br>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <div class="footer-right-area wow fadeIn">
+                <h2>聯絡地址</h2>
+                <div class="footer-right-contact">
+                  <div class="single-contact">
+                    <div class="contact-icon">
+                      <i class="fa fa-map-marker"></i>
+                    </div>
+                    <p>408台中市南屯區公益路二段51號18樓</p>
+                  </div>
+                  <div class="single-contact">
+                    <div class="contact-icon">
+                      <i class="fa fa-envelope"></i>
+                    </div>
+                    <p><a href="mailto:hello@tom.com">資策會@123.com</a></p>
+                  </div>
+                  <div class="single-contact">
+                    <div class="contact-icon">
+                      <i class="fa fa-phone"></i>
+                    </div>
+                    <p><a href="#">+ (04) 2326 5860</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <object style="border:0; height: 450px; width: 100%;"
+                data="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14562.417726390522!2d120.6510083!3d24.1505262!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x334dfd5796c49ff6!2z6LOH562W5pyDLeaVuOS9jeaVmeiCsueglOeptuaJgC3kuK3ljYDoqJPnt7TkuK3lv4M!5e0!3m2!1szh-TW!2stw!4v1605460791496!5m2!1szh-TW!2stw"></object>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer-area section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
+              <ul class="social-icon">
+                <li>
+                  <a class="facebook" href="#"><i class="icon-social-facebook"></i></a>
+                </li>
+                <li>
+                  <a class="twitter" href="#"><i class="icon-social-twitter"></i></a>
+                </li>
+                <li>
+                  <a class="instagram" href="#"><i class="icon-social-instagram"></i></a>
+                </li>
+                <li>
+                  <a class="instagram" href="#"><i class="icon-social-linkedin"></i></a>
+                </li>
+                <li>
+                  <a class="instagram" href="#"><i class="icon-social-google"></i></a>
+                </li>
+              </ul>
+              <p>實習趣. 版權所有</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Go to Top Link -->
+    <a href="#" class="back-to-top">
+      <i class="icon-arrow-up"></i>
+    </a>
+
+
+    <!-- 地區選擇對話盒 -->
+    <div class="modal fade" id="areaDialogBox" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle"
+      aria-hidden="true">
+
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalScrollableTitle">地區選擇</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+
+            <div class="cityItems">
+              <div class="nav flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                <div>縣市</div>
+
+                <!-- 一組縣市 -->
+                <% cityList.forEach(function(cityList){ %>
+                <a class="nav-link cityNavItem" id="city<%= cityList.cityId %>" data-toggle="pill"
+                  href="#area<%= cityList.cityId %>" role="tab" aria-selected="true"><%= cityList.cityName %></a>
+                <% }) %>
+                <!-- 一組縣市^ -->
+              </div>
+            </div>
+
+            <div class="areaItem overflow-auto">
+              <div class="tab-content" id="v-pills-tabContent">
+
+                <div>
+                  區
+                </div>
+
+                <!-- 一組區 -->
+                <% cityList.forEach(function(cityList){  
+                   var citySelect = cityList.cityId;
+                   
+                   var filterTowns = townsList.filter(function(item,index,array){
+                    return (citySelect-1 < item.cityId) && (item.cityId< citySelect + 1);   
+                    })
+                  
+                  %>
+                <div class="tab-pane fade " id="area<%= cityList.cityId %>" role="tabpanel">
+                  <% filterTowns.forEach(function(towns){
+    
+                  %>
+                  <div><input type="checkbox" id="town<%= towns.townshipId %>" name="areaSelected"
+                      value="<%= cityList.cityName %><%= towns.townshipName %>"
+                      data-areaValue="<%= towns.townshipId %>"><label
+                      for="town<%= towns.townshipId %>"><%= towns.townshipName%></label></div>
+                  <% })  %>
+                </div>
+                <% }) %>
+                <!-- 一組區^ -->
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-common" data-dismiss="modal" id="areaCancelBtn">Close</button>
+            <button type="button" class="btn btn-common" data-dismiss="modal" id="areaComfirmBtn">Save</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- 地區選擇對話盒^ -->
+
+
+
+    <!-- 職缺類別選擇對話盒 -->
+    <div class="modal fade" id="classDialogBox" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalScrollableTitle">職務類別選擇</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <div class="classCheckBoxLay">
+              <div>職務類別</div>
+              <% jobClassList.forEach(function(jobClass){ %>
+              <div class="classCheckBoxItem">
+                <input type="checkbox" id="jobClass<%= jobClass.jobClassId %>" name="jobClass"
+                  value="<%= jobClass.jobClassName %>" data-jobClassValue="<%= jobClass.jobClassId %>"><label
+                  for="jobClass<%= jobClass.jobClassId %>"><%= jobClass.jobClassName %></label>
+              </div>
+              <% }) %>
+            </div>
+          </div>
+
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-common" data-dismiss="modal" id="clsseCancelBtn">Close</button>
+            <button type="button" class="btn btn-common" data-dismiss="modal" id="clsseComfirmBtn">Save
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <!-- 職缺類別對話盒^ -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.mixitup.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/jquery.nav.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/nivo-lightbox.js"></script>
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.min.js"></script>
+    <script src="assets/js/map.js"></script>
+    <script src="js/search/search.js"></script>
+    <script src="js/ajaxrequest/searchquery.js"></script>
+
+</body>
+
+</html>

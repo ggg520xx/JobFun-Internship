@@ -1,0 +1,306 @@
+@font-face{
+    font-family: "jf-openhuninn";
+    src:url(../font/jf-openhuninn-1.1/jf-openhuninn-1.1.ttf);
+}
+body{
+    background-color: #f1f1f1;
+    font-family: "jf-openhuninn";
+}
+
+/* 搜尋結果標題 */
+.searchTitleBar{
+    height: 40px;
+    width: 100%;
+    margin: 20px auto 15px auto;
+    background-color: #BF8A6B;
+    color: white;
+    border-radius: 3px;
+}
+.searchTitleItem{
+
+}
+.searchTitleBar div{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: auto;
+    margin-bottom: auto;
+    vertical-align: middle;
+}
+/* 搜尋結果標題^ */
+
+/* 搜尋結果卡片 */
+.searchResultCard{
+    height: 60px;
+    width: 100%;
+    margin: 5px auto 5px auto;
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px 0.5px;
+}
+.searchResultCard:hover{
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 1px 5px 0px;
+}
+.searchResultCard div{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: auto;
+    margin-bottom: auto;
+    vertical-align: middle;
+}
+/* 搜尋結果卡片^ */
+
+
+/*應徵按鈕*/
+.applyBtn{
+    width: 70px;
+    height: 35px;
+    position: relative;
+    text-align: center;
+}
+.applyBtnTop{
+    position: absolute;
+    width: 70px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #BF8A6B;
+    line-height: 30px;
+    padding-top: 2.5px;
+    z-index: 2;
+    top:-3px;
+    left: 0px;
+    transition: all 0.1s;
+}
+.applyBtnSec{
+    position: absolute;
+    width: 68px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #884d2b;
+    line-height: 30px;
+    left: 1px;
+    z-index: 1;
+}
+.applyBtnTop:hover{
+    top:0px;
+    transition: all 0.1s;
+}
+.applyBtnText{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    color: white; /*字體顏色*/
+}
+.applyBtnPaper{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background-image: url(../img/paperairplan.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+/*----------*/
+
+.searchResultCard .jobClessShow{
+    font-size: 14px;
+    text-align: center;
+    width: 62px;
+    height: 22px;
+    color: snow;
+    border-radius: 5px;
+    background-color: rgb(241, 52, 84);
+    vertical-align: center;
+}
+
+/*搜尋列*/
+
+.searchBar{
+    background-color: #DFD1C2;
+    transition: 0.2s all;
+}
+.searchBarLay{
+    width: 100%;
+    height: 50px;
+    border-radius: 26px;
+    background-color: white;
+    text-align: center;
+    padding-top: 8px;
+}
+.searchCondition{
+    width: 80%;
+    height: 36px;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.searchCondition div{
+    display: inline-block;
+    font-size: 22px;
+}
+.areaText,
+.classText{
+    position: relative;
+    text-align: left;
+    width: 25%;
+    border-right: 1.5px rgba(0, 0, 0, .3) solid;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;    
+    white-space: nowrap;
+    padding: 0px 5px 0px 5px;
+    cursor: pointer;
+}
+.areaText:hover,
+.classText:hover{
+    opacity: .7;
+}
+.keyWordInputLay{
+    display: inline-block;
+    text-align: left;
+    width: 40%;
+    vertical-align: middle;
+    border-right: 1.5px rgba(0, 0, 0, .3) solid;
+}
+.keyWordInputLay .keyWordInput{
+    width: 100%;
+    border: none;
+}
+.keyWordInput:focus{
+    outline-style: none;
+}
+.keyWordInput::placeholder{
+    color: rgba(0, 0, 0, .3);
+}
+.moreBtnImg{
+    display: inline-block;
+    position: absolute;
+    right: 8px;
+    top: 10px;
+   
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    background-image: url(../img/morebtn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.searchBtn{
+    display: inline-block;
+    vertical-align: middle;
+    background-color:white;
+    width: 35px;
+    height: 35px;
+    border: none;
+    margin-left: 5px;
+    background-image: url(../img/search2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.searchBtn:focus{
+    outline-style: none;
+}
+.searchBtn:hover{
+    opacity: .7;
+}
+/*搜尋列^*/
+
+
+
+
+/* 選擇地區對話盒 */
+.comfirmBtnLay{
+    font-size: 24px; 
+    font-weight: 500;
+    color: white;
+    width: 90px;
+    height: 35px;
+    padding: 0;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5);    
+    background-color: #BF8A6B;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+.comfirmBtnLay:hover{
+    opacity: 0.9;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.8);    
+    transition: 0.5s all;
+}
+.comfirmBtnLay:focus{
+    outline: none;
+}
+.cancelBtnLay{
+    font-size: 24px; 
+    font-weight: 500;
+    color: #BF8A6B;
+    width: 90px;
+    height: 35px;
+    padding: 0;
+    border: solid 1px#BF8A6B;
+    border-radius: 3px;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);    
+    background-color: white;
+    cursor: pointer;
+}
+.cancelBtnLay:hover{
+    opacity: 0.9;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.8);    
+    transition: 0.5s all;
+}
+.cancelBtnLay:focus{
+    outline: none;
+}
+.cityItems{
+    display: inline-block;
+    width: 50%;
+    max-height: 50vh;
+    vertical-align: top;
+    text-align: left;
+}
+.areaItem{
+    margin-left: 10px;
+    display: inline-block;
+    width: 45%;
+    max-height: 300px;
+    vertical-align: top;
+}
+.nav-link:not(.active) {
+    background-color: #fff;
+    color: black;
+}
+.nav-link {
+    text-align: center;
+    margin: 5px;
+    width:30%;
+    border-radius: 3px;
+    background-color:#BF8A6B;
+    color:white;
+    padding: 4px;
+}
+/* 選擇地區對話盒^*/
+
+
+/*search bar fix top*/
+.fixedTop{
+    transition: 0.2s all;
+    background-color: White;
+    position: fixed;
+    top: 58px;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0px 0px 10px 0px black; 
+}
+
+
+.fontTpx{
+    font-size: 12px;
+}

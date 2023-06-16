@@ -1,0 +1,220 @@
+/* @font-face{
+    font-family: "jf-openhuninn";
+    src:url(../font/jf-openhuninn-1.1/jf-openhuninn-1.1.ttf);
+}
+body{
+    font-family: "jf-openhuninn";
+} */
+
+
+
+
+/* .navbar-header>a>img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    align-items: center;
+    display: inline-block;
+} */
+
+
+
+
+.btn-common{
+    color: #fff;
+    /* background-color: #00b4d9; */
+    position: relative;
+    z-index: 1;
+}
+
+.btn-common:hover {
+    color: #fff;
+    /* background-color: #21cff3; */
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+.btn-outline-common{
+    background-color: white;
+    color: #00b4d9;
+    border-color: #00b4d9;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-outline-common:hover {
+    color: #00b4d9;
+    box-shadow: 0 6px 22px rgba(0, 180, 217,.2);
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
+.btn-outline-common:focus{
+    color: #00b4d9;
+}
+
+
+/*大btn*/
+.btn-common-lg{
+    width: 180px;
+    font-size: 28px;
+    color: #fff;
+    background-color: #00b4d9;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-common-lg:hover {
+    color: #fff;
+    background-color: #21cff3;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+.btn-outline-common-lg{    
+    width: 180px;
+    font-size: 28px;
+    color: #00b4d9;
+    border-color: #00b4d9;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-outline-common-lg:hover {
+    color: #00b4d9;
+    box-shadow: 0 6px 22px rgba(0, 180, 217,.2);
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+/*中btn*/
+.btn-common-md{
+    width: 150px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #00b4d9;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-common-md:hover {
+    color: #fff;
+    background-color: #21cff3;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+.btn-outline-common-md{
+    width: 150px;
+    font-size: 20px;
+    color: #00b4d9;
+    border-color: #00b4d9;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-outline-common-md:hover {
+    color: #00b4d9;
+    box-shadow: 0 6px 22px rgba(0, 180, 217,.2);
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
+/*小btn*/
+.btn-common-sl{
+    width: 80px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #00b4d9;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-common-sl:hover {
+    color: #fff;
+    background-color: #21cff3;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+.btn-outline-common-sl{
+    width: 80px;
+    font-size: 16px;
+    color: #00b4d9;
+    border-color: #00b4d9;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-outline-common-sl:hover {
+    color: #00b4d9;
+    box-shadow: 0 6px 22px rgba(0, 180, 217,.2);
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+
+
+/*應徵按鈕*/
+.applyBtn{
+    width: 68px;
+    height: 35px;
+    position: relative;
+    text-align: center;
+}
+
+.applyBtnTop{
+    position: absolute;
+    padding: 0px 5px 0px 5px;
+    border-radius: 3px;
+    background-color: rgba(0, 180, 217,.8);
+    box-shadow:0px 3px 5px 0px rgba(0, 180, 217,.5);
+    line-height: 30px;
+    z-index: 2;
+    top:-3px;
+    left: 0px;
+    transition: all 0.1s;
+    white-space:nowrap;
+}
+
+.applyBtnTop:hover{
+    top:0px;
+    
+    box-shadow:0px 0px 5px 0px rgba(0, 180, 217,.5);
+    
+    box-shadow:inset 0px 0px 5px 2px rgb(0, 163, 196);
+
+    transition: all 0.1s;
+}
+.applyBtnText{
+    padding-top: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    color: white; /*字體顏色*/
+}
+
+.applyBtnPaper{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background-image: url(../img/paperairplan.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+/*----------*/
+
+

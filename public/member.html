@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>實習趣-你最佳的好幫手</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Fonts -->
+  <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome.min.css">
+  <!-- Icon -->
+  <link rel="stylesheet" type="text/css" href="assets/fonts/simple-line-icons.css">
+  <!-- Slicknav -->
+  <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
+  <!-- Menu CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/menu_sideslide.css">
+  <!-- Slider CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/slide-style.css">
+  <!-- Nivo Lightbox -->
+  <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css">
+  <!-- Animate -->
+  <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+  <!-- Main Style -->
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <!-- Responsive Style -->
+  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="css/public.css">
+  <link rel="stylesheet" href="css/search/search.css">
+  <link rel="stylesheet" href="css/member/member.css">
+  <link rel="stylesheet" href="css/signin/signin.css">
+  <!-- icon -->
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" href="jQuery/filter-each-column/Filter.css">
+  <link rel="stylesheet" href="css/company/profile.css">
+  <link rel="stylesheet" href="css/job/job.css">
+  <style>
+
+  </style>
+</head>
+
+<body id="top">
+  <!-- Header Area wrapper Starts -->
+  <header id="header-wrap">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo navbarNoMove" style="height: 70px;">
+      <div class="container" style="padding: 0;">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
+            aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="icon-menu"></span>
+            <span class="icon-menu"></span>
+            <span class="icon-menu"></span>
+          </button>
+          <a href="index.html" class="navbar-brand">
+            <h4>實習趣</h4>
+          </a>
+
+        </div>
+        <div class="collapse navbar-collapse" id="main-navbar">
+          <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix">
+            <li class="nav-item active">
+              <a class="nav-link" href="search.html">
+                實習職缺
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">
+                最新公告
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">
+                職缺管理
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resume">
+                關於實習趣
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolios">
+                聯絡我們
+              </a>
+            </li>
+            <li class="nav-item">
+              <!-- <a class="nav-link" href="">登入</a> -->
+              <a class="nav-link" href=""><i class="fas fa-user-circle">登入</i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Start -->
+      <ul class="onepage-nev mobile-menu">
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#about">about</a>
+        </li>
+        <li>
+          <a href="#services">Services</a>
+        </li>
+        <li>
+          <a href="#resume">resume</a>
+        </li>
+        <li>
+          <a href="#portfolio">Work</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+      <!-- Mobile Menu End -->
+    </nav>
+    <!-- Navbar End -->
+  </header>
+  <!-- Header Area wrapper End -->
+
+  <div class="wrapper row3">
+    <main class="hoc container clear">
+      <!-- main body -->
+      <div id="tabs" class="clear" style="color: black;">
+        <div class="one_quarter first">
+          <ul>
+            <li style="border: none;">
+              <div class="profile-pic-div">
+                <img src="img/20180917093513_98.png.256x256_q85.png" id="photo" style="height: 100px;width: 100px;">
+                <input type="file" id="file">
+                <label for="file" id="uploadBtn">Choose Photo</label>
+              </div>
+            </li>
+            <li class="userName" style="border: none;margin-top: 10px;">
+              <h5>すみっこぐらし</h5>
+            </li>
+            <li style="margin-top: 10px;"><a href="#tab-1">會員中心</a></li>
+            <li><a href="#tab-2">新增與管理履歷</a></li>
+            <li><a href="#tab-3">收藏職缺</a></li>
+            <li><a href="#tab-4">應徵紀錄</a></li>
+            <li><a href="#tab-5">修改個人資料</a></li>
+          </ul>
+        </div>
+        <div class="three_quarter">
+
+          <div id="tab-1">
+            <div class="services-item fadeInDown" data-wow-delay="0.6s" style="color: black;">
+              <div class="col-5" style="text-align: left;margin:auto">
+                <h3>個人資料</h3>
+                <br>
+                <h5 class="resumeDetail">姓名:</h5>
+                <h6 class="resumeDetail">王曉明</h6>
+                <hr>
+                <h5 class="resumeDetail">生日:</h5>
+                <h6 class="resumeDetail">1996/08/01</h6>
+                <hr>
+                <h5 class="resumeDetail">電話:</h5>&emsp13;
+                <h6 class="resumeDetail">0123456789</h6>
+                <hr>
+                <h5 class="resumeDetail">E-mail:</h5>&emsp13;
+                <h6 class="resumeDetail">abc123@gmail.com</h6>
+                <hr>
+                <h5 class="resumeDetail">就讀大學:</h5>&emsp13;
+                <h6 class="resumeDetail">台中科技大學</h6>
+                <hr>
+                <h5 class="resumeDetail">科系類別:</h5>&emsp13;
+                <h6 class="resumeDetail">語文類</h6>
+                <hr>
+                <h5 class="resumeDetail">就讀科系:</h5>&emsp13;
+                <h6 class="resumeDetail">應用日語系</h6>
+              </div>
+            </div>
+            <br>
+            <h5>為您推薦這些優質的實習職缺:</h5>
+            <div class="row searchResultCard">
+              <div class="col-lg-3">
+                <div class="jobClessShow">軟體工程</div>
+                <div>前端工程師實習生</div>
+              </div>
+              <div class="col-lg-3">蘋果有限公司</div>
+              <div class="col-lg-2">台中市南屯區</div>
+              <div class="col-lg-2">2020-11-07</div>
+              <div class="col-lg-2">
+
+                <button class="filter btn btn-common" data-filter=".design">應徵</button>
+              </div>
+            </div>
+            <div class="row searchResultCard">
+              <div class="col-lg-3">
+                <div class="jobClessShow">軟體工程</div>
+                <div>前端工程師實習生</div>
+              </div>
+              <div class="col-lg-3">蘋果有限公司</div>
+              <div class="col-lg-2">台中市南屯區</div>
+              <div class="col-lg-2">2020-11-07</div>
+              <div class="col-lg-2">
+
+                <button class="filter btn btn-common" data-filter=".design">應徵</button>
+              </div>
+            </div>
+          </div>
+
+          <div id="tab-2" class="clear" style="text-align: center;">
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <!-- 新增彈跳按鈕-->
+
+
+                <div class="col-12 text-right">
+                  <button class="btn btn-common" style="display: inline-block;" onclick="check_click_Function(this)"
+                    id="check_click">新增履歷</button>
+                </div>
+                <br>
+                <div class="">
+
+
+                  <div class="col-12" id="hide_page">
+
+
+                    <div class="card services-item-box fadeInDown">
+                      <div class="card-body row">
+                        <div class="col-6">
+                          <h5 class="card-title"><a href="">第一份履歷</a></h5>
+                          <h6>前端工程師</h6>
+                          <h6>台中市西屯區</h6>
+                          <!-- <h5>狀態：<u style="color: red;">上架</u></h5> -->
+                        </div>
+
+                        <div class="col-6">
+                          <div style="float: right;">
+                            <button class="btn btn-common" onclick="edit_resume(this)" id="edit_click">編輯</button>
+                            <button class="btn btn-common">刪除</button>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <br>
+
+                    <div class="card services-item-box fadeInDown">
+                      <div class="card-body row">
+                        <div class="col-6">
+                          <h5 class="card-title"><a href="">第二份履歷</a></h5>
+                          <h6>後端工程師</h6>
+                          <h6>台中市西屯區</h6>
+                          <!-- <h5>狀態：<u style="color: red;">上架</u></h5> -->
+                        </div>
+
+
+
+                        <div class="col-6">
+                          <div style="float: right;">
+                            <button class="btn btn-common" onclick="edit_resume(this)" id="edit_click">編輯</button>
+                            <button class="btn btn-common">刪除</button>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <br>
+
+                    <div class="card services-item-box fadeInDown">
+                      <div class="card-body row">
+                        <div class="col-6">
+
+
+                          <h5 class="card-title"><a href="">第三份履歷</a></h5>
+                          <h6>全端工程師</h6>
+                          <h6>台中市西屯區</h6>
+                          <!-- <h5>狀態：<u style="color: red;">上架</u></h5> -->
+                        </div>
+
+
+                        <div class="col-6">
+                          <div style="float: right;">
+                            <button class="btn btn-common" onclick="edit_resume(this)" id="edit_click">編輯</button>
+                            <button class="btn btn-common">刪除</button>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+                  <script>
+
+                    // 同步互換～～～～～～～
+                    // 上面綁id 和 onclick 
+
+
+                    // 點擊去抓div 把hidden改為false
+                    function check_click_Function() {
+                      var d = document.getElementById("show_here");
+                      var s = document.getElementById("hide_page");
+
+                      var hidebtn = document.getElementById('check_click');
+                      check_click.style.display = 'none';
+
+                      d.hidden = false;
+                      s.hidden = true;
+                    }
+
+
+                    function check_back_Function() {
+                      var r = document.getElementById("show_here");
+                      var t = document.getElementById("hide_page");
+                      var editcv = document.getElementById("edit_resume");
+
+                      var hidebtn = document.getElementById('check_click');
+                      check_click.style.display = 'inline-block';
+
+                      editcv.hidden = true;
+                      r.hidden = true;
+                      t.hidden = false;
+                    }
+
+                    function edit_resume() {
+                      var editcv = document.getElementById("edit_resume");
+                      var v = document.getElementById("hide_page");
+
+
+                      var hidebtn = document.getElementById('check_click');
+                      check_click.style.display = 'none';
+
+                      editcv.hidden = false;
+                      v.hidden = true;
+                    }
+                  </script>
+
+
+
+
+
+
+                  <br>
+
+                  <div class="col-6" style="text-align: left;margin:auto" id="edit_resume" hidden="true">
+
+                    <h3 style="text-align: center;" class="section-title h3control">Step.1 基本資料修改</h3>
+                    
+                    <div>
+                      
+                      <label for="" class="labelLay">履歷名稱：</label><input type="text" class="form-control signInputLay"
+                        name="account" placeholder="">
+                    </div>
+
+                    <div>
+                      <label for="" class="labelLay">電話號碼：</label><input type="text" class="form-control signInputLay"
+                        name="number" placeholder="">
+                    </div>
+
+                    <div>
+                      <label for="" class="labelLay">信箱：</label><input type="text" class="form-control signInputLay"
+                        name="eMali" placeholder="">
+                    </div>
+
+                    <div>
+                      <label for="" class="labelLay">學校：</label>
+                      <div class="simulationInput signInputLay" id="selectShool" data-toggle="modal"
+                        data-target="#schoolDialogBox">
+                      </div>
+                      <input type="text" class="form-control d-none" name="school" id="schooSelected">
+                    </div>
+
+                    <div>
+                      <label for="" class="labelLay">科系類別：</label>
+                      <div class="simulationInput signInputLay" id="selectMajorClass" data-toggle="modal"
+                        data-target="#majorClassDialogBox">
+                      </div>
+                      <input type="text" class="form-control d-none" name="majorClass" placeholder=""
+                        id="MajorClassSelected">
+                    </div>
+
+                    <div>
+                      <label for="" class="labelLay">科系名稱：</label>
+                      <input type="text" class="form-control signInputLay" name="majorName" placeholder="">
+                    </div>
+                    <hr>
+                    <h3 style="text-align: center;" class="section-title h3control">Step.2 技能填寫修改</h3>
+                    <br>
+                    <textarea name="" id="" cols="30" rows="10" style="margin: auto;"></textarea>
+                    <hr>
+                    <h3 style="text-align: center;" class="section-title h3control">Step.3 自傳上傳</h3>
+                    <br>
+                    <input type="file" id="myFile" name="filename" style="margin: auto;">
+                    <br><br>
+
+
+                    <div class=" mb-3 group-end " style="text-align:center">
+                      <button class="btn btn-common" onclick="check_back_Function(this)" id="check_back">返回</button>
+                      <button class="btn btn-common">確認修改</button>
+                    </div>
+                  </div>
+
+
+
+
+
+
+                  <div class="col-6" style="text-align: left;margin:auto" id="show_here" hidden="true">
+                    <h3 style="text-align: center;" class="section-title h3control">Step.1 基本資料填寫</h3>
+                    
+
+      
+                    
+                    <div>
+                      <label for="" class="labelLay">履歷名稱：</label><input type="text" class="form-control signInputLay"
+                        name="account" placeholder="">
+                    </div>
+
+                    <div>
+                      <label for="" class="labelLay">電話號碼：</label><input type="password"
+                        class="form-control signInputLay" name="password" placeholder="">
+                    </div>
+
+                    <div>
+                      <label for="" class="labelLay">信箱：</label><input type="text" class="form-control signInputLay"
+                        name="eMali" placeholder="">
+                    </div>
+
+                    <div>
+                      <label for="" class="labelLay">學校：</label>
+                      <div class="simulationInput signInputLay" id="selectShool" data-toggle="modal"
+                        data-target="#schoolDialogBox">
+                      </div>
+                      <input type="text" class="form-control d-none" name="school" placeholder="學校" id="schooSelected">
+                    </div>
+
+                    <div>
+                      <label for="" class="labelLay">科系類別：</label>
+                      <div class="simulationInput signInputLay" id="selectMajorClass" data-toggle="modal"
+                        data-target="#majorClassDialogBox">
+                      </div>
+                      <input type="text" class="form-control d-none" name="majorClass" placeholder=""
+                        id="MajorClassSelected">
+                    </div>
+
+                    <div>
+                      <label for="" class="labelLay">科系名稱：</label>
+                      <input type="text" class="form-control signInputLay" name="majorName" placeholder="">
+                    </div>
+                    <hr>
+                    <h3 style="text-align: center;" class="section-title h3control">Step.2 技能填寫</h3>
+                    <br>
+                    <textarea name="" id="" cols="30" rows="10" style="margin: auto;"></textarea>
+                    <hr>
+                    <h3 style="text-align: center;" class="section-title h3control">Step.3 自傳上傳</h3>
+                    <br>
+                    <input type="file" id="myFile" name="filename" style="margin: auto;">
+                    <br><br>
+
+                    <div class=" mb-3 group-end " style="text-align:center">
+
+                      <button class="btn btn-common" onclick="check_back_Function(this)" id="check_back">返回</button>
+                      <button class="btn btn-common">確認新增</button>
+                    </div>
+
+
+
+                    <div class="input-group mb-3 group-end">
+                      <a class="filter btn btn-common btnModify" style="margin: auto;display: none;">確認修改</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <br>
+                <div class="row">
+                  <div class="col-1"></div>
+                  <div class="services-item fadeInDown col-3">
+                    <h5 for="">First Resume</h5>
+                    <br>
+                    <div class="input-group mb-3 group-end">
+                      <button type="button" class="filter btn btn-outline-common" data-toggle="modal"
+                        data-target=".bd-example-modal-lg" style="margin: auto;color: black;">編輯
+                      </button>
+                    </div>
+                    <div class="input-group mb-3 group-end">
+                      <a class="filter btn btn-common" style="margin: auto;">刪除</a>
+                    </div>
+                    <br>
+
+
+                    <!-- --------------------下面不知道包在哪 -->
+
+                    <div data-backdrop="static" class="modal fade bd-example-modal-lg"
+                      style="overflow-y: hidden;margin: auto;" tabindex="-1" role="dialog"
+                      aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content" style="overflow-x:hidden;max-height:90vh;">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" style="float: right;">&times;</span>
+                          </button>
+
+                          <div class="col-6" style="text-align: left;margin:auto">
+                            <h3 style="text-align: center;" class="section-title h3control">Step.1 基本資料修改</h3>
+                            <div>
+                              <label for="" class="labelLay">履歷名稱：</label><input type="text"
+                                class="form-control signInputLay" name="account" placeholder="">
+                            </div>
+
+                            <div>
+                              <label for="" class="labelLay">電話號碼：</label><input type="password"
+                                class="form-control signInputLay" name="password" placeholder="">
+                            </div>
+
+                            <div>
+                              <label for="" class="labelLay">信箱：</label><input type="text"
+                                class="form-control signInputLay" name="eMali" placeholder="">
+                            </div>
+
+                            <div>
+                              <label for="" class="labelLay">學校：</label>
+                              <div class="simulationInput signInputLay" id="selectShool" data-toggle="modal"
+                                data-target="#schoolDialogBox">
+                              </div>
+                              <input type="text" class="form-control d-none" name="school" placeholder="學校"
+                                id="schooSelected">
+                            </div>
+
+                            <div>
+                              <label for="" class="labelLay">科系類別：</label>
+                              <div class="simulationInput signInputLay" id="selectMajorClass" data-toggle="modal"
+                                data-target="#majorClassDialogBox">
+                              </div>
+                              <input type="text" class="form-control d-none" name="majorClass" placeholder=""
+                                id="MajorClassSelected">
+                            </div>
+
+                            <div>
+                              <label for="" class="labelLay">科系名稱：</label>
+                              <input type="text" class="form-control signInputLay" name="majorName" placeholder="">
+                            </div>
+                            <hr>
+                            <h3 style="text-align: center;" class="section-title h3control">Step.2 技能填寫修改</h3>
+                            <br>
+                            <textarea name="" id="" cols="30" rows="10" style="margin: auto;"></textarea>
+                            <hr>
+                            <h3 style="text-align: center;" class="section-title h3control">Step.3 自傳上傳</h3>
+                            <br>
+                            <input type="file" id="myFile" name="filename" style="margin: auto;">
+                            <br><br>
+
+                            <!-- <button class="btn btn-common" onclick="check_back_Function(this)"
+                              id="check_back">返回</button> -->
+                            <!-- <div class="input-group mb-3 group-end">
+                              <a class="filter btn btn-common btnModify" style="margin: auto;" data-dismiss="modal"
+                                aria-label="Close">確認修改</a>
+                            </div> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- --------------上面這包不知道控制哪裡 -->
+
+
+
+          <div id="tab-3">
+            <div class="row">
+
+              <div class="col-1"></div>
+              <div class="services-item fadeInDown col-3">
+                <a href="">
+                  <h5>前端開發工程師 Front-End Developer</h5>
+                </a>
+                <br>
+                <h6>智鈦星平台服務有限公司</h6>
+                <br>
+                <h6>台北市信義區</h6>
+                <br>
+                <div class="input-group mb-3 group-end">
+                  <a class="filter btn btn-common" style="margin: auto;">刪除</a>
+                </div>
+              </div>
+
+
+
+              <div class="col-1"></div>
+              <div class="services-item fadeInDown col-3">
+                <a href="">
+                  <h5>前端開發工程師 Front-End Developer</h5>
+                </a>
+                <br>
+                <h6>智鈦星平台服務有限公司</h6>
+                <br>
+                <h6>台北市信義區</h6>
+                <br>
+                <div class="input-group mb-3 group-end">
+                  <a class="filter btn btn-common" style="margin: auto;">刪除</a>
+                </div>
+              </div>
+
+
+
+              <div class="col-1"></div>
+              <div class="services-item fadeInDown col-3">
+                <a href="">
+                  <h5>前端開發工程師 Front-End Developer</h5>
+                </a>
+                <br>
+                <h6>智鈦星平台服務有限公司</h6>
+                <br>
+                <h6>台北市信義區</h6>
+                <br>
+                <div class="input-group mb-3 group-end">
+                  <a class="filter btn btn-common" style="margin: auto;">刪除</a>
+                </div>
+              </div>
+            </div>
+            <br>
+
+
+            <div class="row">
+
+              <div class="col-1"></div>
+              <div class="services-item fadeInDown col-3">
+                <a href="">
+                  <h5>前端開發工程師 Front-End Developer</h5>
+                </a>
+                <br>
+                <h6>智鈦星平台服務有限公司</h6>
+                <br>
+                <h6>台北市信義區</h6>
+                <br>
+                <div class="input-group mb-3 group-end">
+                  <a class="filter btn btn-common" style="margin: auto;">刪除</a>
+                </div>
+              </div>
+              <div class="col-1"></div>
+              <div class="services-item fadeInDown col-3">
+                <a href="">
+                  <h5>前端開發工程師 Front-End Developer</h5>
+                </a>
+                <br>
+                <h6>智鈦星平台服務有限公司</h6>
+                <br>
+                <h6>台北市信義區</h6>
+                <br>
+                <div class="input-group mb-3 group-end">
+                  <a class="filter btn btn-common" style="margin: auto;">刪除</a>
+                </div>
+              </div>
+              <div class="col-1"></div>
+              <div class="services-item fadeInDown col-3">
+                <a href="">
+                  <h5>前端開發工程師 Front-End Developer</h5>
+                </a>
+                <br>
+                <h6>智鈦星平台服務有限公司</h6>
+                <br>
+                <h6>台北市信義區</h6>
+                <br>
+                <div class="input-group mb-3 group-end">
+                  <a class="filter btn btn-common" style="margin: auto;">刪除</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+
+
+          <div id="tab-4">
+
+            <table class="table table-hover" style="border: none;">
+              <thead>
+                <tr>
+                  <th scope="col" class="th_style">應徵日期</th>
+                  <th scope="col" class="th_style">應徵實習</th>
+                  <th scope="col" class="th_style">應徵公司</th>
+                  <th scope="col" class="th_style">公司回覆</th>
+                  <th scope="col" class="th_style">查看詳情</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2020/07/18</td>
+                  <td>前端開發工程師 Front-End Developer</td>
+                  <td>智鈦星平台服務有限公司</td>
+                  <td style="text-align: center;">已回覆</td>
+                  <td><button class="btn btn-common">查看詳細</button></td>
+                </tr>
+                <tr>
+                  <td>2020/07/18</td>
+                  <td>前端開發工程師 Front-End Developer</td>
+                  <td>智鈦星平台服務有限公司</td>
+                  <td style="text-align: center;">已回覆</td>
+                  <td><button class="btn btn-common">查看詳細</button></td>
+                </tr>
+
+                <tr>
+                  <td>2020/07/18</td>
+                  <td>前端開發工程師 Front-End Developer</td>
+                  <td>智鈦星平台服務有限公司</td>
+                  <td style="text-align: center;">未回覆</td>
+                  <td><button class="btn btn-common">查看詳細</button></td>
+                </tr>
+                <tr>
+                  <td>2020/07/18</td>
+                  <td>前端開發工程師 Front-End Developer</td>
+                  <td>智鈦星平台服務有限公司</td>
+                  <td style="text-align: center;">未回覆</td>
+                  <td><button class="btn btn-common">查看詳細</button></td>
+                </tr>
+
+
+
+
+
+
+              </tbody>
+            </table>
+
+          </div>
+
+          <div id="tab-5">
+            <div class="row">
+              <div class="col-3"></div>
+              <div class="services-item fadeInDown fontSizeSet signLay" id="signFirstPart">
+
+                <div class="services-content text-left">
+                  <div>
+                    <label for="" class="labelLay">帳號：</label><input type="text" class="form-control signInputLay"
+                      name="account" placeholder="" value="abcde12345">
+                  </div>
+
+                  <div>
+                    <label for="" class="labelLay">密碼：</label><input type="password" class="form-control signInputLay"
+                      name="password" placeholder="" value="abcde12345">
+                  </div>
+
+                  <div>
+                    <label for="" class="labelLay">確認密碼：</label><input type="password" class="form-control signInputLay"
+                      name="confirmPassword" placeholder="" value="abcde12345">
+                  </div>
+
+                  <div>
+                    <label for="" class="labelLay">姓名：</label><input type="text" class="form-control signInputLay"
+                      name="userName" placeholder="" value="王曉明">
+                  </div>
+
+                  <div>
+                    <label for="" class="labelLay">信箱：</label><input type="text" class="form-control signInputLay"
+                      name="eMali" placeholder="" value="abcd1234@gmail.com">
+                  </div>
+
+                  <div>
+                    <label for="" class="labelLay">電話：</label><input type="text" class="form-control signInputLay"
+                      name="phone" placeholder="" value="012345678">
+                  </div>
+
+                  <div>
+                    <label for="" class="labelLay">學校：</label>
+                    <div class="simulationInput signInputLay" id="selectShool" data-toggle="modal"
+                      data-target="#schoolDialogBox">
+                    </div>
+                    <input type="text" class="form-control d-none" name="school" placeholder="學校" id="schooSelected"
+                      value="台中科技大學">
+                  </div>
+
+                  <div>
+                    <label for="" class="labelLay">科系類別：</label>
+                    <div class="simulationInput signInputLay" id="selectMajorClass" data-toggle="modal"
+                      data-target="#majorClassDialogBox">
+                    </div>
+                    <input type="text" class="form-control d-none" name="majorClass" placeholder=""
+                      id="MajorClassSelected" value="語文系">
+                  </div>
+
+                  <div>
+                    <label for="" class="labelLay">科系名稱：</label>
+                    <input type="text" class="form-control signInputLay" name="majorName" placeholder="" value="應用日語系">
+                  </div>
+
+                  <div class="text-center">
+                    <input type="button" name="next" class="btn btn-common" value="確認修改">
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </main>
+  </div>
+  <!-- 選學校對話框 -->
+  <div class="modal fade" id="schoolDialogBox" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle"
+    aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalScrollableTitle">地區選擇</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="cityItems">
+            <div class="nav flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+              <div>縣市</div>
+
+              <!-- 一組縣市 -->
+              <a class="nav-link cityNavItem" id="" data-toggle="pill" href="#taipeiarea" role="tab"
+                aria-selected="true">台北市</a>
+              <!-- 一組縣市^ -->
+            </div>
+          </div>
+
+          <div class="areaItem overflow-auto">
+            <div class="tab-content" id="v-pills-tabContent">
+              <div>
+                校名
+              </div>
+              <!-- 一組區 -->
+              <div class="tab-pane fade " id="taipeiarea" role="tabpanel">
+                <div><input type="radio" id="s1" name="schoolSelected" value="國立台灣大學" class="resumeDetail"><label
+                    for="s1" class="resumeDetail">國立台灣大學</label>
+                </div>
+                <div><input type="radio" id="s2" name="schoolSelected" value="國立台灣科技大學" class="resumeDetail"><label
+                    for="s2" class="resumeDetail">國立台灣科技大學</label>
+                </div>
+                <div><input type="radio" id="s3" name="schoolSelected" value="文化大學" class="resumeDetail"><label for="s3"
+                    class="resumeDetail">文化大學</label>
+                </div>
+              </div>
+              <!-- 一組區^ -->
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-common" data-dismiss="modal" id="areaCancelBtn">Close</button>
+          <button type="button" class="btn btn-common" data-dismiss="modal" id="schoolComfirmBtn">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 選學校對話框END -->
+
+
+  <!-- 選科系類別對話框 -->
+  <div class="modal fade" id="majorClassDialogBox" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalScrollableTitle">科系類別選擇</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body ">
+          <div class="classCheckBoxLay">
+            <div>職務類別</div>
+
+            <!-- a set -->
+            <div class="classCheckBoxItem">
+              <input type="radio" id="majorClass1" name="majorClass" value="數理化學" class="resumeDetail"><label
+                for="majorClass1" class="resumeDetail">數理化學</label>
+            </div>
+            <!-- a set -->
+
+
+            <div class="classCheckBoxItem">
+              <input type="radio" id="majorClass2" name="majorClass" value="醫藥衛生" class="resumeDetail"><label
+                for="majorClass2" class="resumeDetail">醫藥衛生</label>
+            </div>
+            <div class="classCheckBoxItem">
+              <input type="radio" id="majorClass3" name="majorClass" value="建築與設計" class="resumeDetail"><label
+                for="majorClass3" class="resumeDetail">建築與設計</label>
+            </div>
+
+
+
+          </div>
+
+        </div>
+
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-common" data-dismiss="modal" id="clsseCancelBtn">Close</button>
+          <button type="button" class="btn btn-common" data-dismiss="modal" id="majorClassComfirmBtn">Save</button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <!-- 選科系類別對話框END -->
+  <!-- Footer Section Start -->
+  <footer class="footer-area section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
+            <ul class="social-icon">
+              <li>
+                <a class="facebook" href="#"><i class="icon-social-facebook"></i></a>
+              </li>
+              <li>
+                <a class="twitter" href="#"><i class="icon-social-twitter"></i></a>
+              </li>
+              <li>
+                <a class="instagram" href="#"><i class="icon-social-instagram"></i></a>
+              </li>
+              <li>
+                <a class="instagram" href="#"><i class="icon-social-linkedin"></i></a>
+              </li>
+              <li>
+                <a class="instagram" href="#"><i class="icon-social-google"></i></a>
+              </li>
+            </ul>
+            <p>實習趣. 版權所有</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- JAVASCRIPTS -->
+  <script src="layout/scripts/jquery.min.js"></script>
+  <script src="layout/scripts/jquery-ui.min.js"></script>
+  <script src="layout/scripts/jquery.backtotop.js"></script>
+  <script src="layout/scripts/jquery.mobilemenu.js"></script>
+  <!-- IE9 Placeholder Support -->
+  <script src="layout/scripts/jquery.placeholder.min.js"></script>
+  <script src="assets/js/jquery-min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.mixitup.js"></script>
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <script src="assets/js/waypoints.min.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/jquery.nav.js"></script>
+  <script src="assets/js/jquery.easing.min.js"></script>
+  <script src="assets/js/nivo-lightbox.js"></script>
+  <script src="assets/js/jquery.slicknav.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/form-validator.min.js"></script>
+  <script src="assets/js/contact-form-script.min.js"></script>
+  <script src="assets/js/map.js"></script>
+  <script src="js/sign/sign.js"></script>
+  <script src="jQuery/filter-each-column/Filter.js"></script>
+  <script src="js/company/profile-image.js"></script>
+
+  <!-- / IE9 Placeholder Support -->
+  <script>
+    $(document).ready(function () {
+      $('.btnNext').click(function () {
+        $('.nav-tabs .active').parent().next('li').find('a').trigger('click');
+      });
+
+      $('.btnModify').click(function () {
+        $('.nav-tabs .active').parent().next('li').find('a').trigger('click');
+      });
+
+      $('.btnPrevious').click(function () {
+        $('.nav-tabs .active').parent().prev('li').find('a').trigger('click');
+      });
+    });
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome.min.css">
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="assets/fonts/simple-line-icons.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
+    <!-- Menu CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/menu_sideslide.css">
+    <!-- Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slide-style.css">
+    <!-- Nivo Lightbox -->
+    <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css">
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+    <link rel="stylesheet" href="css/search/search.css">
+
+    <script src="js/search/search.js"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo navbarNoMove">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar"
+                    aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="icon-menu"></span>
+                    <span class="icon-menu"></span>
+                    <span class="icon-menu"></span>
+                </button>
+                <a href="index.html" class="navbar-brand">
+                    <h4>實習趣</h4>
+                </a>
+
+            </div>
+            <div class="collapse navbar-collapse" id="main-navbar">
+                <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix">
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            實習職缺
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            最新公告
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            職缺管理
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            關於實習趣
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">
+                            聯絡我們
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signinstudent.html">
+                            登入
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Start -->
+        <ul class="onepage-nev mobile-menu">
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#about">about</a>
+            </li>
+            <li>
+                <a href="#services">Services</a>
+            </li>
+            <li>
+                <a href="#resume">resume</a>
+            </li>
+            <li>
+                <a href="#portfolio">Work</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+        <!-- Mobile Menu End -->
+    </nav>
+
+    <div class="container">
+        <br>
+        <br>
+        <br><br>
+
+
+    </div>
+
+
+
+    <!-- 搜尋列 -->
+    <div class="searchBar" id="searchBar">
+        <div class="container " style="padding-left: 60px; padding-right: 60px;" >
+            <div class="searchBarLay">
+                <div class="searchCondition">
+                    <div class="keyWordInputLay">
+                        <input class="d-none" type="text" name="area">
+                        <input class="d-none" type="text" name="jobClass">
+                        <input class="keyWordInput" type="text" placeholder="輸入關鍵字">
+                    </div>
+                    <div class="areaText" id="selectArea" data-toggle="modal" data-target="#areaDialogBox">
+                        <span id="selectedAreaText">
+                            地區
+                        </span>
+                        <div class="moreBtnImg">
+                        </div>
+                    </div>
+                    <div class="classText" id="selectClass" data-toggle="modal" data-target="#classDialogBox">
+                        <span id="selectedCassText">
+                            類別
+                        </span>
+                        <div class="moreBtnImg">
+                        </div>
+                    </div>
+
+                    <button class="searchBtn"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----- -->
+
+    <div class="container " style="padding-left: 60px; padding-right: 60px;">
+        <!-- 標題列 -->
+        <div class="row searchTitleBar">
+            <div class="col-4">實習職稱</div>
+            <div class="col-3">公司名稱</div>
+            <div class="col-2">地點</div>
+            <div class="col-2">更新時間 <span>^</span></div>
+            <div class="col-1"></div>
+        </div>
+        <!-- --- -->
+
+
+        <!-- 一組 實習職缺 card -->
+        <div class="row searchResultCard">
+            <div class="col-lg-4">
+                <div class="jobClessShow">軟體工程</div>
+                <div>前端工程師實習生</div>
+            </div>
+            <div class="col-lg-3">蘋果有限公司</div>
+            <div class="col-lg-2">台中市南屯區</div>
+            <div class="col-lg-2">2020-11-07</div>
+            <div class="col-lg-1">
+                <div class="applyBtn">
+                    <a href="#">
+                        <div class="applyBtnTop">
+                            <div class="applyBtnPaper"></div>
+                            <a href="Job.html"> <div class="applyBtnText">應徵</div></a>
+                           
+                        </div>
+                        <div class="applyBtnSec"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- ---------- -->
+
+        <div class="row searchResultCard">
+            <div class="col-4">
+                <div class="jobClessShow">工程研發</div>
+                <div>光電研發部開發助理</div>
+            </div>
+            <div class="col-3">鄧肯光電有限公司</div>
+            <div class="col-2">台中市北屯區</div>
+            <div class="col-2">2020-10-25</div>
+            <div class="col-1">
+                <div class="applyBtn">
+                    <a href="#">
+                        <div class="applyBtnTop">
+                            <div class="applyBtnPaper"></div>
+                            <div class="applyBtnText">應徵</div>
+                        </div>
+                        <div class="applyBtnSec"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row searchResultCard">
+            <div class="col-4">
+                <div class="jobClessShow">軟體工程</div>
+                <div>後端工程師實習生</div>
+            </div>
+            <div class="col-3">安安有限公司</div>
+            <div class="col-2">台北市內湖區</div>
+            <div class="col-2">2020-11-16</div>
+            <div class="col-1">
+                <div class="applyBtn">
+                    <a href="#">
+                        <div class="applyBtnTop">
+                            <div class="applyBtnPaper"></div>
+                            <div class="applyBtnText">應徵</div>
+                        </div>
+                        <div class="applyBtnSec"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row searchResultCard">
+            <div class="col-4">
+                <div class="jobClessShow">製圖測量</div>
+                <div>土木工程師助理</div>
+            </div>
+            <div class="col-3">長榮有限公司</div>
+            <div class="col-2">台南市佳里區</div>
+            <div class="col-2">2020-11-15</div>
+            <div class="col-1">
+                <div class="applyBtn">
+                    <a href="#">
+                        <div class="applyBtnTop">
+                            <div class="applyBtnPaper"></div>
+                            <div class="applyBtnText">應徵</div>
+                        </div>
+                        <div class="applyBtnSec"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row searchResultCard">
+            <div class="col-4">
+                <div class="jobClessShow">軟體工程</div>
+                <div>前端工程師實習生</div>
+            </div>
+            <div class="col-3">蘋果有限公司</div>
+            <div class="col-2">台中市南屯區</div>
+            <div class="col-2">2020-11-07</div>
+            <div class="col-1" >
+                <div class="applyBtn" >
+                    <a href="#">
+                        <div class="applyBtnTop">
+                            <div class="applyBtnPaper"></div>
+                            <div class="applyBtnText">應徵</div>
+                        </div>
+                        <div class="applyBtnSec"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- ---------- -->
+        <div class="row searchResultCard">
+            <div class="col-4">
+                <div class="jobClessShow">工程研發</div>
+                <div>光電研發部開發助理</div>
+            </div>
+            <div class="col-3">鄧肯光電有限公司</div>
+            <div class="col-2">台中市北屯區</div>
+            <div class="col-2">2020-10-25</div>
+            <div class="col-1">
+                <div class="applyBtn">
+                    <a href="#">
+                        <div class="applyBtnTop">
+                            <div class="applyBtnPaper"></div>
+                            <div class="applyBtnText">應徵</div>
+                        </div>
+                        <div class="applyBtnSec"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row searchResultCard">
+            <div class="col-4">
+                <div class="jobClessShow">軟體工程</div>
+                <div>後端工程師實習生</div>
+            </div>
+            <div class="col-3">安安有限公司</div>
+            <div class="col-2">台北市內湖區</div>
+            <div class="col-2">2020-11-16</div>
+            <div class="col-1">
+                <div class="applyBtn">
+                    <a href="#">
+                        <div class="applyBtnTop">
+                            <div class="applyBtnPaper"></div>
+                            <div class="applyBtnText">應徵</div>
+                        </div>
+                        <div class="applyBtnSec"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row searchResultCard">
+            <div class="col-4">
+                <div class="jobClessShow">製圖測量</div>
+                <div>土木工程師助理</div>
+            </div>
+            <div class="col-3">長榮有限公司</div>
+            <div class="col-2">台南市佳里區</div>
+            <div class="col-2">2020-11-15</div>
+            <div class="col-1">
+                <div class="applyBtn">
+                    <a href="#">
+                        <div class="applyBtnTop">
+                            <div class="applyBtnPaper"></div>
+                            <div class="applyBtnText">應徵</div>
+                        </div>
+                        <div class="applyBtnSec"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+
+    <!-- 地區選擇對話盒 -->
+    <div class="modal fade" id="areaDialogBox" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle"
+        aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">地區選擇</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body overflow-hidden">
+
+                    <div class="cityItems">
+                        <div class="nav flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+                            <div>縣市</div>
+
+                            <!-- 一組縣市 -->
+                            <a class="nav-link  cityNavItem" id="" data-toggle="pill" href="#taipeiarea" role="tab"
+                                aria-selected="true">台北</a>
+
+                            <!-- 一組縣市^ -->
+
+                        </div>
+                    </div>
+
+                    <div class="areaItem ">
+                        <div class="tab-content" id="v-pills-tabContent">
+
+                            <div>
+                                區
+                            </div>
+
+                            <!-- 一組區 -->
+                            <div class="tab-pane fade" id="taipeiarea" role="tabpanel">
+                                <div class="areaCheckBoxItem">
+                                    <div><input type="checkbox" id="t1" name="areaSelected" value="大安"><label
+                                            for="t1">大安</label></div>
+                                    <div><input type="checkbox" id="t2" name="areaSelected" value="內湖"><label
+                                            for="t2">內湖</label></div>
+                                </div>
+                            </div>
+                            <!-- 一組區^ -->
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-common" data-dismiss="modal"
+                        id="areaCancelBtn">Close</button>
+                    <button type="button" class="btn btn-common" data-dismiss="modal" id="areaComfirmBtn">Save
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- 地區選擇對話盒^ -->
+
+
+
+    <!-- 職缺類別選擇對話盒 -->
+    <div class="modal fade" id="classDialogBox" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalScrollableTitle">職務類別選擇</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body ">
+                    <div class="classCheckBoxLay">
+                        <div>職務類別</div>
+                        <div class="classCheckBoxItem">
+                            <input type="checkbox" id="jobClass1" name="jobClass" value="軟體工程"><label
+                                for="jobClass1">軟體工程</label>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-common" data-dismiss="modal"
+                        id="clsseCancelBtn">Close</button>
+                    <button type="button" class="btn btn-common" data-dismiss="modal" id="clsseComfirmBtn">Save</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- 職缺類別對話盒^ -->
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Footer Section Start -->
+    <footer class="footer-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
+                        <ul class="social-icon">
+                            <li>
+                                <a class="facebook" href="#"><i class="icon-social-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a class="twitter" href="#"><i class="icon-social-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a class="instagram" href="#"><i class="icon-social-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a class="instagram" href="#"><i class="icon-social-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a class="instagram" href="#"><i class="icon-social-google"></i></a>
+                            </li>
+                        </ul>
+                        <p>實習趣. 版權所有</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery-min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.mixitup.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/jquery.nav.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/nivo-lightbox.js"></script>
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.min.js"></script>
+    <script src="assets/js/map.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+set up 
+1.把jobfun(3).sql匯入資料庫
+2.進到Vs code 開啟終端機視窗 輸入　npm install
+3.打開xampp 啟動apache MySql ->mysql port 3306
+4.vs code 終端機視窗輸入 nodemon start
+5.瀏覽器輸入localhost:3000/index 
+
+
+進度
+
+登出，登入
+廠商註冊
+查詢頁輸出
+
+待完成:
+會員註冊(multer上傳圖片*待解決)
+職缺查詢功能

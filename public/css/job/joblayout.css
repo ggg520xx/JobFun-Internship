@@ -1,0 +1,13 @@
+.resumeRadio{
+    display: inline-block;
+}
+.resumeRadioText{
+    display: inline-block;
+}
+
+.resumeBody{
+    max-height: 65vh;
+    overflow: auto;
+    
+}
+
